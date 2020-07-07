@@ -8,17 +8,13 @@ from string import digits
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
-# check is user is root
-if (getpass.getuser()) != "root":
-    sys.exit("Yout need be root to run this program")
-
 
 class Handler:
     def __init__(self):
         print("Init...")
         self.directoryChoose = builder.get_object("directoryChoose")
         self.directoryChoose.set_filename(os.getcwd())
-        self.devicesLabel = builder.get_object('devicesLabel')
+        self.devicesLabel = builder.get_object("devicesLabel")
         self.statusDynamicLabel = builder.get_object("statusDynamicLabel")
         self.updateSysInfo()
 
@@ -31,16 +27,8 @@ class Handler:
         remove_digits = str.maketrans("", "", digits)
         device = partition.translate(remove_digits)
         model = self.executeCmd(f"./scripts/getdeviceinfo.sh {device}")
-        cpuinfo = self.executeCmd('./scripts/getcpuinfo.sh')
-        self.devicesLabel.set_text(f'{device} [{model}]\n{cpuinfo}')
-
-    def showError(self, title, message):
-        dialog = Gtk.MessageDialog(
-            window, 0, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK, title,
-        )
-        dialog.format_secondary_text(message)
-        dialog.run()
-        dialog.destroy()
+        cpuinfo = self.executeCmd("./scripts/getcpuinfo.sh")
+        self.devicesLabel.set_text(f"{device} [{model}]\n{cpuinfo}")
 
     def executeCmd(self, cmd):
         return subprocess.getoutput(cmd)
@@ -67,5 +55,21 @@ builder.add_from_file("./glade/mainWindow.glade")
 builder.connect_signals(Handler())
 
 window = builder.get_object("mainWindow")
+
+
+def showError(title, message):
+    dialog = Gtk.MessageDialog(
+        window, 0, Gtk.MessageType.ERROR, Gtk.ButtonsType.OK, title,
+    )
+    dialog.format_secondary_text(message)
+    dialog.run()
+    dialog.destroy()
+
+
+if (getpass.getuser()) != "root":
+    showError("Superuser rights", "You need root to run this application.")
+    sys.exit(1)
+
 window.show_all()
 Gtk.main()
+
