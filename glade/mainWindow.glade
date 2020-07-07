@@ -399,6 +399,10 @@ Q1T1</property>
                     <property name="margin_top">10</property>
                     <property name="margin_bottom">10</property>
                     <property name="label" translatable="yes">SSD Type/Processador</property>
+                    <property name="justify">center</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans Bold 11"/>
+                    </attributes>
                   </object>
                   <packing>
                     <property name="expand">False</property>
