@@ -2,6 +2,9 @@ import os
 import sys
 import subprocess
 import getpass
+import json
+import humanfriendly
+import re
 import gi
 from string import digits
 
@@ -35,6 +38,9 @@ class Handler:
 
     def on_runButton_clicked(self, widget):
         print("Clicou em Run!")
+        output = json.loads(self.executeCmd(f'./scripts/rnd4kq1t1read.sh {self.directoryChoose.get_filename()}'))
+        bw_bytes = output['jobs'][0]['read']['bw_bytes']
+        print(f'Bytes =====> {humanfriendly.format_size(bw_bytes)}/s')
 
     def on_directoryChoose_file_set(self, widget):
         print("Escolheu um diretório....")
@@ -67,7 +73,7 @@ def showError(title, message):
 
 
 if (getpass.getuser()) != "root":
-    showError("Superuser rights", "You need root to run this application.")
+    showError("Superuser Rights", "You need root to run this application.")
     sys.exit(1)
 
 window.show_all()
