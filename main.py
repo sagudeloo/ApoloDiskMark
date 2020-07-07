@@ -19,6 +19,8 @@ class Handler:
         self.directoryChoose.set_filename(os.getcwd())
         self.devicesLabel = builder.get_object("devicesLabel")
         self.statusDynamicLabel = builder.get_object("statusDynamicLabel")
+        self.progressBar = builder.get_object("progressBar")
+        self.runButton = builder.get_object("runButton")
         self.updateSysInfo()
 
     def updateSysInfo(self):
@@ -38,9 +40,6 @@ class Handler:
 
     def on_runButton_clicked(self, widget):
         print("Clicou em Run!")
-        output = json.loads(self.executeCmd(f'./scripts/rnd4kq1t1read.sh {self.directoryChoose.get_filename()}'))
-        bw_bytes = output['jobs'][0]['read']['bw_bytes']
-        print(f'Bytes =====> {humanfriendly.format_size(bw_bytes)}/s')
 
     def on_directoryChoose_file_set(self, widget):
         print("Escolheu um diretório....")
@@ -54,6 +53,31 @@ class Handler:
 
     def on_aboutMenuItem_activate(self, widget):
         print("Clicou em about...")
+
+    def runBenchmark(self):
+        print("Running the Benchmark...")
+        benchmarks = [
+            'seq1mq8t1read',
+            'seq1mq8t1write',
+            'seq1mq1t1read',
+            'seq1mq1t1write',
+            'rnd4kq32t16read',
+            'rnd4kq32t16write',
+            'rnd4kq1t1read',
+            'rnd4kq1t1write'
+        ]
+
+        for i in benchmarks:
+            print(f'{benchmarks}.sh')
+
+
+      #  output = json.loads(
+       #     self.executeCmd(
+        #        f"./scripts/rnd4kq1t1read.sh {self.directoryChoose.get_filename()}"
+        #    )
+        #)
+        #bw_bytes = output["jobs"][0]["read"]["bw_bytes"]
+        #print(f"Bytes =====> {humanfriendly.format_size(bw_bytes)}/s")
 
 
 builder = Gtk.Builder()
