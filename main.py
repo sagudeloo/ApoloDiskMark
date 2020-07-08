@@ -5,15 +5,40 @@ import getpass
 import json
 import humanfriendly
 import re
+import time
+import threading
 import gi
 from string import digits
 
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
+benchmarks = [
+    "seq1mq8t1read",
+    "seq1mq8t1write",
+    "seq1mq1t1read",
+    "seq1mq1t1write",
+    "rnd4kq32t16read",
+    "rnd4kq32t16write",
+    "rnd4kq1t1read",
+    "rnd4kq1t1write",
+]
+
 
 class Handler:
     benchmarkRunning = False
+
+    def thread_function(self, i, directory):
+        print(f"Thread {i}: starting")
+        print(f"Index: [{i}] {benchmarks[i]}.sh {directory}")
+        output = json.loads(
+            self.executeCmd(f"./scripts/{benchmarks[i]}.sh {directory}")
+        )
+        if i == 0:
+            bw_bytes = output["jobs"][0]["read"]["bw_bytes"]
+            print(f"{humanfriendly.format_size(bw_bytes)}/s")
+
+        print(f"Thread {i}: finishing")
 
     def __init__(self):
         print("Init...")
@@ -23,10 +48,18 @@ class Handler:
         self.statusDynamicLabel = builder.get_object("statusDynamicLabel")
         self.progressBar = builder.get_object("progressBar")
         self.runButton = builder.get_object("runButton")
+        self.seq1mq8t1R = builder.get_object("seq1mq8t1R")
+        self.seq1mq8t1W = builder.get_object("seq1mq8t1W")
+        self.seq1mq1t1R = builder.get_object("seq1mq1t1R")
+        self.seq1mq1t1W = builder.get_object("seq1mq1t1W")
+        self.rnd4kq32t16R = builder.get_object("rnd4kq32t16R")
+        self.rnd4kq32t16W = builder.get_object("rnd4kq32t16W")
+        self.rnd4kq1t1R = builder.get_object("rnd4kq1t1R")
+        self.rnd4kq1t1W = builder.get_object("rnd4kq1t1W")
         self.updateSysInfo()
 
     def updateSysInfo(self):
-        print("Refresh SysteInfo()")
+        print("Refresh SystemInfo()")
         # get device disk from directory
         partition = self.executeCmd(
             f"./scripts/getpartition.sh {self.directoryChoose.get_filename()}"
@@ -44,6 +77,7 @@ class Handler:
         self.benchmarkRunning = False
         self.runButton.set_label("Run")
         self.statusDynamicLabel.set_text("IDLE")
+        window.refresh()
 
     def on_runButton_clicked(self, widget):
         self.progressBar.set_fraction(0)
@@ -73,34 +107,12 @@ class Handler:
         self.benchmarkRunning = True
         self.runButton.set_label("Stop")
         self.statusDynamicLabel.set_text("Running, please wait...")
-        benchmarks = [
-            "seq1mq8t1read",
-            "seq1mq8t1write",
-            "seq1mq1t1read",
-            "seq1mq1t1write",
-            "rnd4kq32t16read",
-            "rnd4kq32t16write",
-            "rnd4kq1t1read",
-            "rnd4kq1t1write",
-        ]
-        for index, benchmark in enumerate(benchmarks):
-            print(f"Index: [{index}] {benchmark}.sh {self.directoryChoose.get_filename()}")
-            #output = json.loads(
-            #    self.executeCmd(
-            #        f"./scripts/{i}.sh {self.directoryChoose.get_filename()}"
-            #    )
-            #)
-
-
-        self.stopBechmark()
-
-    #  output = json.loads(
-    #     self.executeCmd(
-    #        f"./scripts/rnd4kq1t1read.sh {self.directoryChoose.get_filename()}"
-    #    )
-    # )
-    # bw_bytes = output["jobs"][0]["read"]["bw_bytes"]
-    # print(f"Bytes =====> {humanfriendly.format_size(bw_bytes)}/s")
+        x = threading.Thread(
+            target=self.thread_function, args=(0, self.directoryChoose.get_filename())
+        )
+        print("Main    : before running thread")
+        x.start()
+        print("Main    : wait for the thread to finish")
 
 
 builder = Gtk.Builder()

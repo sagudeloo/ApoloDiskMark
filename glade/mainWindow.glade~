@@ -227,7 +227,7 @@ Q8T1</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="seq1mq8t1ReadLabel">
+                      <object class="GtkLabel" id="seq1mq8t1R">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
@@ -243,7 +243,7 @@ Q8T1</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="seq1mq8t1WriteLabel">
+                      <object class="GtkLabel" id="seq1mq8t1W">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
@@ -274,7 +274,7 @@ Q1T1</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="seq1mq8t1ReadLabe">
+                      <object class="GtkLabel" id="seq1mq1t1R">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
@@ -289,7 +289,7 @@ Q1T1</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="seq1mq8t1WriteLabe">
+                      <object class="GtkLabel" id="seq1mq1t1W">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
@@ -320,7 +320,7 @@ Q32T16</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="rnd4kq32t16ReadLabel">
+                      <object class="GtkLabel" id="rnd4kq32t16R">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
@@ -335,7 +335,7 @@ Q32T16</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="rnd4kq32t16WriteLabel">
+                      <object class="GtkLabel" id="rnd4kq32t16W">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
@@ -366,7 +366,7 @@ Q1T1</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="rnd4kq1t1ReadLabel">
+                      <object class="GtkLabel" id="rnd4kq1t1R">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
@@ -381,7 +381,7 @@ Q1T1</property>
                       </packing>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="rnd4kq1t1WriteLabel">
+                      <object class="GtkLabel" id="rnd4kq1t1W">
                         <property name="visible">True</property>
                         <property name="can_focus">False</property>
                         <property name="halign">center</property>
