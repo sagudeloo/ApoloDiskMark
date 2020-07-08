@@ -11,7 +11,7 @@ import gi
 from string import digits
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk
+from gi.repository import Gtk, Gdk
 
 benchmarks = [
     "seq1mq8t1read",
@@ -134,6 +134,13 @@ def showError(title, message):
 if (getpass.getuser()) != "root":
     showError("Superuser Rights", "You need root to run this application.")
     sys.exit(1)
+
+
+style_provider = Gtk.CssProvider()
+style_provider.load_from_path(f"{os.getcwd()}/css/gtk.css")
+Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(), style_provider, Gtk.STYLE_PROVIDER_PRIORITY_USER)
+
+
 
 window.show_all()
 Gtk.main()
