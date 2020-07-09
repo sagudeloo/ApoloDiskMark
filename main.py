@@ -236,6 +236,9 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        # Conectando Sinais
+        self.actionQuit.triggered.connect(self.appQuit)
+        self.clearResults()
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -300,7 +303,17 @@ class Ui_MainWindow(object):
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.actionQuit.setText(_translate("MainWindow", "Quit"))
         self.actionAbout.setText(_translate("MainWindow", "About"))
-        self.actionQuit.triggered.connect(self.appQuit)
+
+    def clearResults(self):
+        self.progressBar.setProperty("value", 0)
+        self.seq1mq8t1ReadLabel.setText("")
+        self.seq1mq8t1WriteLabel.setText("")
+        self.seq1mq1t1ReadLabel.setText("")
+        self.seq1mq1t1WriteLabel.setText("")
+        self.rnd4kq32t16ReadLabel.setText("")
+        self.rnd4kq32t16WriteLabel.setText("")
+        self.rnd4kq1t1ReadLabel.setText("")
+        self.rnd4kq1t1WriteLabel.setText("")
 
     def appQuit(self):
         app.quit()
