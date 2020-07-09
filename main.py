@@ -1,4 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import *
+import os
 
 
 class Ui_MainWindow(object):
@@ -236,8 +238,13 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
-        # Conectando Sinais
+        # Define startup values
+        self.directoryLineEdit.setText(os.getcwd())
+
+        # Connect signals
         self.actionQuit.triggered.connect(self.appQuit)
+        self.selectPushButton.clicked.connect(self.showDirectoryDialog)
+        self.startPushButton.clicked.connect(self.startBenchMark)
         self.clearResults()
 
     def retranslateUi(self, MainWindow):
@@ -304,6 +311,21 @@ class Ui_MainWindow(object):
         self.actionQuit.setText(_translate("MainWindow", "Quit"))
         self.actionAbout.setText(_translate("MainWindow", "About"))
 
+
+    def startBenchMark(self):
+        self.isWritable()
+
+    # show directory dialog
+    def showDirectoryDialog(self):
+        print("Show Directory Dialog!")
+        # pylint: disable=all
+        dialog = QFileDialog()
+        dialog.setFileMode(QFileDialog.DirectoryOnly)
+        if dialog.exec():
+            file = dialog.selectedFiles()[0]
+            print(f"file ===> {file}")
+            self.directoryLineEdit.setText(file)
+
     def clearResults(self):
         self.progressBar.setProperty("value", 0)
         self.seq1mq8t1ReadLabel.setText("")
@@ -314,6 +336,19 @@ class Ui_MainWindow(object):
         self.rnd4kq32t16WriteLabel.setText("")
         self.rnd4kq1t1ReadLabel.setText("")
         self.rnd4kq1t1WriteLabel.setText("")
+        self.statusbar.showMessage("IDLE")
+
+    def isWritable(self):
+        dir = self.directoryLineEdit.text()
+        print(f"Verify if dir {dir} is writable...")
+        if os.access(dir, os.W_OK):
+            print(f"{dir} is writable.")
+        else:
+            print(f"{dir} NOT writable.")
+            errorDialog = QMessageBox()
+            errorDialog.setIcon(QMessageBox.Warning)
+            errorDialog.setText(f"Cannot write to {dir}")
+            errorDialog.exec()
 
     def appQuit(self):
         app.quit()
