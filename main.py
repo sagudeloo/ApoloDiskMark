@@ -128,10 +128,13 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             self.rnd4kq1t1WriteLabel.setText(val)
 
+        self.progressBar.setProperty('value', (self.thread.operationsIndex + 1) * 12.5)
         self.thread.operationsIndex += 1
         if len(self.thread.operations) == self.thread.operationsIndex:
             print('Stoping all threads')
             self.thread.quit()
+            self.statusbar.showMessage('IDLE')
+            self.startPushButton.setText('Start')
             self.thread.operationsIndex = 0
         else:
             self.thread.start()
@@ -139,10 +142,13 @@ class MainWindow(QtWidgets.QMainWindow):
     def startBenchMark(self):
         if self.thread.isRunning():
             self.startPushButton.setText('Start')
+            self.statusbar.showMessage('IDLE')
             self.thread.terminate()
             self.thread.operationsIndex = 0
         else:
+            self.clearResults()
             self.startPushButton.setText('Stop')
+            self.statusbar.showMessage('Running. Please wait...')
             print('Starting benchmark...')
             # Verify if directory is writable
             if self.isWritable():
