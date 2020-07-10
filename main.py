@@ -63,6 +63,7 @@ class ThreadClass(QtCore.QThread):
         print(f'Running [{cmd}]')
         bw_bytes = ''
         output = json.loads(subprocess.getoutput(cmd))
+        print(output)
         if self.isEven(self.operationsIndex):
             # This is read benchmark
             bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['read']['bw_bytes']))
@@ -148,7 +149,7 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             self.clearResults()
             self.startPushButton.setText('Stop')
-            self.statusbar.showMessage('Running. Please wait...')
+            self.statusbar.showMessage('Running. Please wait, this may take several minutes...')
             print('Starting benchmark...')
             # Verify if directory is writable
             if self.isWritable():
