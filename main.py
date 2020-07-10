@@ -12,6 +12,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.directoryLineEdit.setText(os.getcwd())
         self.selectPushButton = self.findChild(QtWidgets.QPushButton, 'selectPushButton')
         self.selectPushButton.clicked.connect(self.showDirectoryDialog)
+        self.actionQuit = self.findChild(QtWidgets.QAction, 'actionQuit')
+        self.actionQuit.triggered.connect(self.appQuit)
         # show window
         self.show()
 
@@ -24,6 +26,9 @@ class MainWindow(QtWidgets.QMainWindow):
             file = dialog.selectedFiles()[0]
             print(f"file ===> {file}")
             self.directoryLineEdit.setText(file)
+
+    def appQuit(self):
+        app.quit()
 
 
 if __name__ == '__main__':
