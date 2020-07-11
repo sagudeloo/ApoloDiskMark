@@ -13,7 +13,7 @@
 
 ## About
 
-Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark.
+***Crazy DiskMark*** is a utility to benchmark ***SSD*** disks on linux and produce results like ***CrystalDiskMark***.
 
 ## Dependencies
 
@@ -27,7 +27,7 @@ $ sudo apt install fio
 
 ## Install
 
-Crazy DiskMark is available only in AppImage X86_64. Download latest release, make it executable and run the program. 
+Crazy DiskMark is ***easy*** to install and available in AppImage ***X86_64***. Download ***latest*** release, make it ***executable*** and ***run*** the program. 
 
 ```bash
 $ chmod +x chmod +x Crazy_DiskMark-0.2.4-x86_64.AppImage
@@ -36,7 +36,7 @@ $./Crazy_DiskMark-0.2.4-x86_64.AppImage
 
 ## Screenshot
 
-<img src="images/screenshot.png" alt="Crazy DiskMark - Screenshot" width="200" height="300">
+<img src="images/screenshot.png" alt="Crazy DiskMark - Screenshot" width="780" height="480">
 
 
 ## Buy me a Coffee
