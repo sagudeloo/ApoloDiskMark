@@ -36,7 +36,7 @@ $./Crazy_DiskMark-0.2.4-x86_64.AppImage
 
 ## Screenshot
 
-<img src="images/screenshot.png" alt="Crazy DiskMark - Screenshot" width="200" height="300">
+<img src="images/screenshot.png" alt="Crazy DiskMark - Screenshot" width="780" height="480">
 
 
 ## Buy me a Coffee
