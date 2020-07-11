@@ -82,7 +82,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        uic.loadUi('mainwindow.ui', self)
+        uic.loadUi('crazydiskmark.ui', self)
         # Init default values
         self.directoryLineEdit = self.findChild(QtWidgets.QLineEdit, 'directoryLineEdit')
         self.directoryLineEdit.setText(self.thread.directory)
