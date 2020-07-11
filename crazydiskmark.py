@@ -90,6 +90,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.selectPushButton.clicked.connect(self.showDirectoryDialog)
         self.actionQuit = self.findChild(QtWidgets.QAction, 'actionQuit')
         self.actionQuit.triggered.connect(self.appQuit)
+        self.actionAbout = self.findChild(QtWidgets.QAction, 'actionAbout')
+        self.actionAbout.triggered.connect(self.showAboutDialog)
         self.progressBar = self.findChild(QtWidgets.QProgressBar, 'progressBar')
         self.seq1mq8t1ReadLabel = self.findChild(QtWidgets.QLabel, 'seq1mq8t1ReadLabel')
         self.seq1mq8t1WriteLabel = self.findChild(QtWidgets.QLabel, 'seq1mq8t1WriteLabel')
@@ -105,6 +107,12 @@ class MainWindow(QtWidgets.QMainWindow):
         # Configura e conecta a thread
         #  self.thread.setPriority(QtCore.QThread.HighestPriority)
         self.thread.signal.connect(self.receiveThreadfinish)
+
+        self.aboutDialog = QtWidgets.QDialog()
+        uic.loadUi('aboutdialog.ui', self.aboutDialog)
+        self.okPushButton = self.aboutDialog.findChild(QtWidgets.QPushButton, 'okPushButton')
+        self.okPushButton.clicked.connect(self.quitAboutDialog)
+
         # Init results label and others widgets
         self.clearResults()
         # show window
@@ -196,7 +204,14 @@ class MainWindow(QtWidgets.QMainWindow):
             errorDialog.exec()
             return False
 
-    def appQuit(self):
+    def showAboutDialog(self):
+        self.aboutDialog.exec_()
+
+    def quitAboutDialog(self):
+        self.aboutDialog.hide()
+
+    @staticmethod
+    def appQuit():
         app.quit()
 
 
