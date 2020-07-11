@@ -3,6 +3,7 @@ import os
 import subprocess
 import json
 import humanfriendly
+import shutil
 from PyQt5 import QtWidgets, uic, QtCore
 
 
@@ -116,6 +117,13 @@ class MainWindow(QtWidgets.QMainWindow):
         self.version = self.aboutDialog.findChild(QtWidgets.QLabel, 'versionLabel').text()
 
         self.setWindowTitle(f'Crazy DiskMark - {self.version}')
+        # Test if fio (Flexible I/O Tester) is in path
+        if shutil.which('fio') is None:
+            errorDialog = QtWidgets.QMessageBox()
+            errorDialog.setIcon(QtWidgets.QMessageBox.Warning)
+            errorDialog.setText('Flexible I/O Tester not present in your system.')
+            errorDialog.exec()
+            app.quit()
         # Init results label and others widgets
         self.clearResults()
         # show window
