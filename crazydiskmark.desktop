@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Crazy DiskMark
+Comment=Linux disk benchmark tool like CrystalDiskMark
+TryExec=crazydiskmark
+Exec=crazydiskmark
+Icon=Application
+Type=Application
+Categories=Utility;System;
+StartupNotify=true
+X-Ubuntu-Gettext-Domain=crazydiskmark

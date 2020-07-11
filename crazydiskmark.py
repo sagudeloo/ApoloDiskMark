@@ -82,7 +82,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        uic.loadUi('crazydiskmark.ui', self)
+        uic.loadUi('./crazydiskmark.ui', self)
         # Init default values
         self.directoryLineEdit = self.findChild(QtWidgets.QLineEdit, 'directoryLineEdit')
         self.directoryLineEdit.setText(self.thread.directory)
@@ -109,10 +109,13 @@ class MainWindow(QtWidgets.QMainWindow):
         self.thread.signal.connect(self.receiveThreadfinish)
 
         self.aboutDialog = QtWidgets.QDialog()
-        uic.loadUi('aboutdialog.ui', self.aboutDialog)
+        uic.loadUi('./aboutdialog.ui', self.aboutDialog)
         self.okPushButton = self.aboutDialog.findChild(QtWidgets.QPushButton, 'okPushButton')
         self.okPushButton.clicked.connect(self.quitAboutDialog)
 
+        self.version = self.aboutDialog.findChild(QtWidgets.QLabel, 'versionLabel').text()
+
+        self.setWindowTitle(f'Crazy DiskMark - {self.version}')
         # Init results label and others widgets
         self.clearResults()
         # show window
