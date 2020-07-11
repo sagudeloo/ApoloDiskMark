@@ -1,4 +1,4 @@
-VERSION="0.2.4"
+VERSION="0.2.6"
 sed -i "s/[0-9]\.[0-9]\.[0-9]/${VERSION}/g" aboutdialog.ui
 
 pyinstaller crazydiskmark.py
@@ -18,6 +18,8 @@ cp AppRun dist/crazydiskmark/
 appimagetool-x86_64.AppImage -v dist/crazydiskmark/
 
 rm -rfv dist/
+
+rm -v release/*
 
 mv Crazy_DiskMark-x86_64.AppImage release/Crazy_DiskMark-${VERSION}-x86_64.AppImage
 
