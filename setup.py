@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
                  name="crazydiskmark-fredcox",
-                 version="0.2.8",
+                 version="0.2.12",
                  author="Fred Cox",
                  author_email="fredcox@gmail.com",
                  description="Linux disk benchmark tool like CrystalDiskMark",
