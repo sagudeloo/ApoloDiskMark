@@ -123,7 +123,7 @@ class MainWindow(QtWidgets.QMainWindow):
             errorDialog.setIcon(QtWidgets.QMessageBox.Warning)
             errorDialog.setText('Flexible I/O Tester not present in your system.')
             errorDialog.exec()
-            app.quit()
+            sys.exit()
         # Init results label and others widgets
         self.clearResults()
         # show window
