@@ -20,10 +20,8 @@ with open(dialog_filename, 'w') as f:
     for line in newlines:
         f.write(line)
 
-
 setuptools.setup(
-    #name="crazydiskmark-fredcox",
-name="crazydiskmark",
+    name="crazydiskmark",
     version=version,
     author="Fred Cox",
     author_email="fredcox@gmail.com",
