@@ -4,7 +4,7 @@ import subprocess
 import json
 import humanfriendly
 import shutil
-import pathlib
+from pathlib import Path
 from PyQt5 import QtWidgets, uic, QtCore
 
 resource_path = os.path.join(os.path.split(__file__)[0], './')
@@ -90,7 +90,7 @@ class MainWindow(QtWidgets.QMainWindow):
         uic.loadUi(f'{resource_path}./crazydiskmark.ui', self)
         # Init default values
         self.directoryLineEdit = self.findChild(QtWidgets.QLineEdit, 'directoryLineEdit')
-        self.directoryLineEdit.setText(resource_path)
+        self.directoryLineEdit.setText(str(Path.home()))
         self.selectPushButton = self.findChild(QtWidgets.QPushButton, 'selectPushButton')
         self.selectPushButton.clicked.connect(self.showDirectoryDialog)
         self.actionQuit = self.findChild(QtWidgets.QAction, 'actionQuit')
