@@ -1,7 +1,5 @@
 # Crazy DiskMark
 
-teste image
-
 ![Crazy DiskMark - Logo](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png)
 
 * [About](#about)
@@ -16,7 +14,13 @@ teste image
 
 ## Dependencies
 
-- fio ***(Flexible I/O Disk)***
+- fio ***(Flexible I/O Disk version >=3.16)***
+
+if you want know about fio version in your system:
+
+```bash
+$ fio --version
+``` 
 
 ### Ubuntu, Debian and derivatives (Linux Mint, MX Linux)
 ```bash
@@ -26,11 +30,11 @@ $ sudo apt install fio
 
 ## Install
 
-Crazy DiskMark is ***easy*** to install and available in AppImage ***X86_64***. Download ***latest*** release, make it ***executable*** and ***run*** the program. 
+Crazy DiskMark is available as pip.  
 
 ```bash
-$ chmod +x chmod +x Crazy_DiskMark-0.2.4-x86_64.AppImage
-$./Crazy_DiskMark-0.2.4-x86_64.AppImage
+$ pip install crazydiskmark
+$ crazydiskmark
 ```
 
 ## Screenshot
