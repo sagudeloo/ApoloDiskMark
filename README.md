@@ -1,5 +1,7 @@
 # Crazy DiskMark
 
+teste image
+
 ![Crazy DiskMark - Logo](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png)
 
 * [About](#about)
@@ -33,7 +35,7 @@ $./Crazy_DiskMark-0.2.4-x86_64.AppImage
 
 ## Screenshot
 
-<img src="https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/screenshot.png">
+![Screenshot](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/screenshot.png)
 
 ## Buy me a Coffee
 
