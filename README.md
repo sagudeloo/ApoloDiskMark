@@ -1,7 +1,6 @@
 # Crazy DiskMark
 
-
-<img src="https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png">
+![Crazy DiskMark - Logo](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png)
 
 * [About](#about)
 * [Dependencies](#dependencies)
