@@ -20,6 +20,7 @@ if you want know about fio version in your system:
 
 ```bash
 $ fio --version
+fio-3.16
 ``` 
 
 ### Ubuntu, Debian and derivatives (Linux Mint, MX Linux)
@@ -33,7 +34,7 @@ $ sudo apt install fio
 Crazy DiskMark is available as pip.  
 
 ```bash
-$ pip install crazydiskmark
+$ pip install crazydiskmark-fredcox==0.2.14
 $ crazydiskmark
 ```
 

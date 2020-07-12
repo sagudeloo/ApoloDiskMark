@@ -5,18 +5,33 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 # update aboutdialog.ui with correct version
-version = '0.2.14'
+version = '0.2.16'
 pattern = "([0-9]+.[0-9]+.[0-9]+)"
 newlines = []
-filename = 'crazydiskmark/aboutdialog.ui'
-with open(filename, 'r') as f:
+dialog_filename = 'crazydiskmark/aboutdialog.ui'
+with open(dialog_filename, 'r') as f:
     for line in f.readlines():
         if re.search(pattern, line):
             newlines.append(re.sub(pattern, version, line))
         else:
             newlines.append(line)
 
-with open(filename, 'w') as f:
+with open(dialog_filename, 'w') as f:
+    for line in newlines:
+        f.write(line)
+
+# update README.md with correct version
+readme_filename = 'README.md'
+newlines.clear()
+
+with open(readme_filename, 'r') as f:
+    for line in f.readlines():
+        if re.search(pattern, line):
+            newlines.append(re.sub(pattern, version, line))
+        else:
+            newlines.append(line)
+
+with open(readme_filename, 'w') as f:
     for line in newlines:
         f.write(line)
 
