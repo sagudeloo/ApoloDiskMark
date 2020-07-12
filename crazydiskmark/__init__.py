@@ -4,7 +4,10 @@ import subprocess
 import json
 import humanfriendly
 import shutil
+import pathlib
 from PyQt5 import QtWidgets, uic, QtCore
+
+resource_path = os.path.join(os.path.split(__file__)[0], './')
 
 
 class ThreadClass(QtCore.QThread):
@@ -60,7 +63,7 @@ class ThreadClass(QtCore.QThread):
     def run(self):
         # executing command
         print(f'Running Thread [{self.operationsIndex}] Even? {self.isEven(self.operationsIndex)}')
-        cmd: str = '{}/crazydiskmark/scripts/{}{}.sh {}'.format(os.getcwd(), self.operations[self.operationsIndex]['prefix'],
+        cmd: str = '{}/scripts/{}{}.sh {}'.format(resource_path, self.operations[self.operationsIndex]['prefix'],
                                                   self.operations[self.operationsIndex]['suffix'], self.directory)
         print(f'Running [{cmd}]')
         bw_bytes = ''
@@ -84,10 +87,10 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        uic.loadUi(f'{os.getcwd()}/crazydiskmark/crazydiskmark.ui', self)
+        uic.loadUi(f'{resource_path}./crazydiskmark.ui', self)
         # Init default values
         self.directoryLineEdit = self.findChild(QtWidgets.QLineEdit, 'directoryLineEdit')
-        self.directoryLineEdit.setText(self.thread.directory)
+        self.directoryLineEdit.setText(resource_path)
         self.selectPushButton = self.findChild(QtWidgets.QPushButton, 'selectPushButton')
         self.selectPushButton.clicked.connect(self.showDirectoryDialog)
         self.actionQuit = self.findChild(QtWidgets.QAction, 'actionQuit')
@@ -111,7 +114,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.thread.signal.connect(self.receiveThreadfinish)
 
         self.aboutDialog = QtWidgets.QDialog()
-        uic.loadUi(f'{os.getcwd()}/crazydiskmark/aboutdialog.ui', self.aboutDialog)
+        uic.loadUi(f'{resource_path}/aboutdialog.ui', self.aboutDialog)
         self.okPushButton = self.aboutDialog.findChild(QtWidgets.QPushButton, 'okPushButton')
         self.okPushButton.clicked.connect(self.quitAboutDialog)
 
@@ -224,7 +227,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     @staticmethod
     def appQuit():
-        app.quit()
+        sys.exit()
 
 
 if __name__ == '__main__':
