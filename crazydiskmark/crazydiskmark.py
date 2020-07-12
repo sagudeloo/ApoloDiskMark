@@ -50,7 +50,8 @@ class ThreadClass(QtCore.QThread):
     def __init__(self, parent=None):
         super(ThreadClass, self).__init__(parent)
 
-    def isEven(self, number):
+    @staticmethod
+    def isEven(number):
         if number % 2 == 0:
             return True
         else:
@@ -59,11 +60,11 @@ class ThreadClass(QtCore.QThread):
     def run(self):
         # executing command
         print(f'Running Thread [{self.operationsIndex}] Even? {self.isEven(self.operationsIndex)}')
-        cmd: str = './scripts/{}{}.sh {}'.format(self.operations[self.operationsIndex]['prefix'],
-                                                 self.operations[self.operationsIndex]['suffix'], self.directory)
+        cmd: str = '{}/crazydiskmark/scripts/{}{}.sh {}'.format(os.getcwd(), self.operations[self.operationsIndex]['prefix'],
+                                                  self.operations[self.operationsIndex]['suffix'], self.directory)
         print(f'Running [{cmd}]')
         bw_bytes = ''
-        output = json.loads(subprocess.getoutput(cmd))
+        output = json.loads(subprocess.getoutput(cmd).encode('utf-8'))
         print(output)
         if self.isEven(self.operationsIndex):
             # This is read benchmark
@@ -83,7 +84,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        uic.loadUi('./crazydiskmark.ui', self)
+        uic.loadUi(f'{os.getcwd()}/crazydiskmark/crazydiskmark.ui', self)
         # Init default values
         self.directoryLineEdit = self.findChild(QtWidgets.QLineEdit, 'directoryLineEdit')
         self.directoryLineEdit.setText(self.thread.directory)
@@ -110,7 +111,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.thread.signal.connect(self.receiveThreadfinish)
 
         self.aboutDialog = QtWidgets.QDialog()
-        uic.loadUi('./aboutdialog.ui', self.aboutDialog)
+        uic.loadUi(f'{os.getcwd()}/crazydiskmark/aboutdialog.ui', self.aboutDialog)
         self.okPushButton = self.aboutDialog.findChild(QtWidgets.QPushButton, 'okPushButton')
         self.okPushButton.clicked.connect(self.quitAboutDialog)
 
