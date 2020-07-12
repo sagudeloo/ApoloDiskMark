@@ -4,6 +4,7 @@
 
 * [About](#about)
 * [Dependencies](#dependencies)
+* [Install](#install)
 * [Buy me a Coffee](#buy-me-a-coffee)
 * [License](#license)
 
@@ -24,9 +25,17 @@ fio-3.16
 ``` 
 
 ### Ubuntu, Debian and derivatives (Linux Mint, MX Linux)
+
 ```bash
 $ sudo apt update
 $ sudo apt install fio
+```
+
+## Install
+
+```bash
+$ pip install crazydiskmark
+$ crazydiskmark
 ```
 
 ## Screenshot
