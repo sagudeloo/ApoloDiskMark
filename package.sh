@@ -1,4 +1,4 @@
-VERSION="0.2.10"
+VERSION="0.2.12"
 sed -i "s/[0-9]\.[0-9]\.[0-9]/${VERSION}/g" aboutdialog.ui
 
 pyinstaller crazydiskmark.py
