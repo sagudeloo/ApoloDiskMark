@@ -1,9 +1,7 @@
 # Crazy DiskMark
 
 
-![Crazy DiskMark - The Linux disk benchmark tool like CrystalDiskMark](crazydiskmark/images/logo.png)
-
-## Índice
+<img src="https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png">
 
 * [About](#about)
 * [Dependencies](#dependencies)
@@ -36,7 +34,7 @@ $./Crazy_DiskMark-0.2.4-x86_64.AppImage
 
 ## Screenshot
 
-![Screenshot](crazydiskmark/images/screenshot.png)
+<img src="https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/screenshot.png">
 
 ## Buy me a Coffee
 
