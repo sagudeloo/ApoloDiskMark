@@ -20,23 +20,10 @@ with open(dialog_filename, 'w') as f:
     for line in newlines:
         f.write(line)
 
-# update README.md with correct version
-readme_filename = 'README.md'
-newlines.clear()
-
-with open(readme_filename, 'r') as f:
-    for line in f.readlines():
-        if re.search(pattern, line):
-            newlines.append(re.sub(pattern, version, line))
-        else:
-            newlines.append(line)
-
-with open(readme_filename, 'w') as f:
-    for line in newlines:
-        f.write(line)
 
 setuptools.setup(
-    name="crazydiskmark-fredcox",
+    #name="crazydiskmark-fredcox",
+name="crazydiskmark",
     version=version,
     author="Fred Cox",
     author_email="fredcox@gmail.com",

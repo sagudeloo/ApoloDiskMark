@@ -4,8 +4,8 @@
 
 * [About](#about)
 * [Dependencies](#dependencies)
-* [Install](#install)
 * [Buy me a Coffee](#buy-me-a-coffee)
+* [License](#license)
 
 
 ## About
@@ -29,15 +29,6 @@ $ sudo apt update
 $ sudo apt install fio
 ```
 
-## Install
-
-Crazy DiskMark is available as pip.  
-
-```bash
-$ pip install crazydiskmark-fredcox==0.2.14
-$ crazydiskmark
-```
-
 ## Screenshot
 
 ![Screenshot](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/screenshot.png)
@@ -45,3 +36,8 @@ $ crazydiskmark
 ## Buy me a Coffee
 
 <a href="https://www.buymeacoffee.com/fredcox" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
+
+## License 
+
+This project use MIT License

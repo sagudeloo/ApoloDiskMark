@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: crazydiskmark-fredcox
+Version: 0.2.16
+Summary: Linux disk benchmark tool like CrystalDiskMark
+Home-page: https://github.com/fredcox/crazydiskmark
+Author: Fred Cox
+Author-email: fredcox@gmail.com
+License: UNKNOWN
+Description: # Crazy DiskMark
+        
+        ![Crazy DiskMark - Logo](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png)
+        
+        * [About](#about)
+        * [Dependencies](#dependencies)
+        * [Install](#install)
+        * [Buy me a Coffee](#buy-me-a-coffee)
+        
+        
+        ## About
+        
+        ***Crazy DiskMark*** is a utility to benchmark ***SSD*** disks on linux and produce results like ***CrystalDiskMark***.
+        
+        ## Dependencies
+        
+        - fio ***(Flexible I/O Disk version >=3.16)***
+        
+        if you want know about fio version in your system:
+        
+        ```bash
+        $ fio --version
+        fio-3.16
+        ``` 
+        
+        ### Ubuntu, Debian and derivatives (Linux Mint, MX Linux)
+        ```bash
+        $ sudo apt update
+        $ sudo apt install fio
+        ```
+        
+        ## Install
+        
+        Crazy DiskMark is available as pip.  
+        
+        ```bash
+        $ pip install crazydiskmark-fredcox==0.2.14
+        $ crazydiskmark
+        ```
+        
+        ## Screenshot
+        
+        ![Screenshot](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/screenshot.png)
+        
+        ## Buy me a Coffee
+        
+        <a href="https://www.buymeacoffee.com/fredcox" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
