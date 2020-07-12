@@ -1,7 +1,7 @@
 # Crazy DiskMark
 
 
-<img src="images/logo.png" alt="Crazy DiskMark - The Linux disk benchmark tool like CrystalDiskMark" width="200" height="300">
+![Crazy DiskMark - The Linux disk benchmark tool like CrystalDiskMark](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png "logo")
 
 ## Índice
 
@@ -36,8 +36,9 @@ $./Crazy_DiskMark-0.2.4-x86_64.AppImage
 
 ## Screenshot
 
-<img src="images/screenshot.png" alt="Crazy DiskMark - Screenshot" width="780" height="480">
+<img src="https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/screenshot.png" alt="Crazy DiskMark - Screenshot" width="780" height="480">
 
+![Screenshot](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/screenshot.png "screenshot")
 
 ## Buy me a Coffee
 
