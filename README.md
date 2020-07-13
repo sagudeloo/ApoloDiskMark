@@ -15,8 +15,8 @@
 
 ## Dependencies
 
-1 - Python version 3.8 or later
-2 - fio ***(Flexible I/O Disk version >=3.16)***
+1. Python version 3.8 or later
+2. fio ***(Flexible I/O Tester)*** version 3.16 or later
 
 if you want know about fio version in your system:
 
