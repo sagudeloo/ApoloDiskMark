@@ -41,7 +41,7 @@ $ crazydiskmark
 
 ## Screenshot
 
-![Screenshot](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/shot.png)
 
 ## Buy me a Coffee
 
