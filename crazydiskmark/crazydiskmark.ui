@@ -86,10 +86,6 @@
        <property name="text">
         <string>Start</string>
        </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>images/starticon.png</normaloff>images/starticon.png</iconset>
-       </property>
       </widget>
       <widget class="QProgressBar" name="progressBar">
        <property name="geometry">
@@ -160,10 +156,6 @@
        </property>
        <property name="text">
         <string>Select</string>
-       </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>images/directoryicon.png</normaloff>images/directoryicon.png</iconset>
        </property>
       </widget>
       <widget class="QLabel" name="typeLabel">

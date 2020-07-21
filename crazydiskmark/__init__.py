@@ -6,6 +6,7 @@ import humanfriendly
 import shutil
 from pathlib import Path
 from PyQt5 import QtWidgets, uic, QtCore, QtGui
+import desktop_file
 
 resource_path = os.path.dirname(__file__)
 
@@ -92,6 +93,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.directoryLineEdit = self.findChild(QtWidgets.QLineEdit, 'directoryLineEdit')
         self.directoryLineEdit.setText(str(Path.home()))
         self.selectPushButton = self.findChild(QtWidgets.QPushButton, 'selectPushButton')
+        self.selectPushButton.setIcon(QtGui.QIcon(f'{resource_path}/images/directoryicon.png'))
         self.selectPushButton.clicked.connect(self.showDirectoryDialog)
         self.actionQuit = self.findChild(QtWidgets.QAction, 'actionQuit')
         self.actionQuit.triggered.connect(self.appQuit)
@@ -133,6 +135,21 @@ class MainWindow(QtWidgets.QMainWindow):
         self.clearResults()
         # show window
         self.show()
+        # Create Desktop entry if not exists
+        desktopPath = desktop_file.getMenuPath()
+        if os.path.exists(f'{desktopPath}/crazydiskmark.desktop'):
+            print('Desktop entry exists [bypass]')
+        else:
+            print('Desktop entry not exists [creating]')
+            print(shutil.which('crazydiskmark'))
+            shortcut = desktop_file.Shortcut(desktopPath, "crazydiskmark", shutil.which('crazydiskmark'))
+            shortcut.setTitle('Crazy DiskMark')
+            shortcut.setWorkingDirectory(os.path.dirname(shutil.which('crazydiskmark')))
+            shortcut.setComment(
+                'Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark')
+            shortcut.setIcon(f'{resource_path}/images/icon.png')
+            shortcut.setCategories('System;')
+            shortcut.save()
 
     def receiveThreadfinish(self, val):
         print('Receiving signal ok ', val)

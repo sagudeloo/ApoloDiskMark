@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/fredlins/.local/bin/crazydiskmark
+Path=/home/fredlins/.local/bin
+Comment=Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark
+Icon=/home/fredlins/Documents/crazydiskmark/crazydiskmark/images/icon.png
+Categories=System;
+Name=Crazy DiskMark
