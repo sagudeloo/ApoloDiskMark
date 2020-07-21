@@ -5,9 +5,9 @@ import json
 import humanfriendly
 import shutil
 from pathlib import Path
-from PyQt5 import QtWidgets, uic, QtCore
+from PyQt5 import QtWidgets, uic, QtCore, QtGui
 
-resource_path = os.path.join(os.path.split(__file__)[0], './')
+resource_path = os.path.dirname(__file__)
 
 
 class ThreadClass(QtCore.QThread):
@@ -87,7 +87,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
         super(MainWindow, self).__init__()
-        uic.loadUi(f'{resource_path}./crazydiskmark.ui', self)
+        uic.loadUi(f'{resource_path}/crazydiskmark.ui', self)
         # Init default values
         self.directoryLineEdit = self.findChild(QtWidgets.QLineEdit, 'directoryLineEdit')
         self.directoryLineEdit.setText(str(Path.home()))
@@ -108,6 +108,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.rnd4kq1t1WriteLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq1t1WriteLabel')
         self.statusbar = self.findChild(QtWidgets.QStatusBar, 'statusbar')
         self.startPushButton = self.findChild(QtWidgets.QPushButton, 'startPushButton')
+        self.startPushButton.setIcon(QtGui.QIcon(f'{resource_path}/images/starticon.png'))
         self.startPushButton.clicked.connect(self.startBenchMark)
         # Configura e conecta a thread
         #  self.thread.setPriority(QtCore.QThread.HighestPriority)

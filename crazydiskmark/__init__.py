@@ -5,7 +5,7 @@ import json
 import humanfriendly
 import shutil
 from pathlib import Path
-from PyQt5 import QtWidgets, uic, QtCore
+from PyQt5 import QtWidgets, uic, QtCore, QtGui
 
 resource_path = os.path.dirname(__file__)
 
@@ -108,6 +108,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.rnd4kq1t1WriteLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq1t1WriteLabel')
         self.statusbar = self.findChild(QtWidgets.QStatusBar, 'statusbar')
         self.startPushButton = self.findChild(QtWidgets.QPushButton, 'startPushButton')
+        self.startPushButton.setIcon(QtGui.QIcon(f'{resource_path}/images/starticon.png'))
         self.startPushButton.clicked.connect(self.startBenchMark)
         # Configura e conecta a thread
         #  self.thread.setPriority(QtCore.QThread.HighestPriority)

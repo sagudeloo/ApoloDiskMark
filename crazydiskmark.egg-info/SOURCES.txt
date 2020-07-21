@@ -12,7 +12,6 @@ crazydiskmark.egg-info/dependency_links.txt
 crazydiskmark.egg-info/not-zip-safe
 crazydiskmark.egg-info/requires.txt
 crazydiskmark.egg-info/top_level.txt
-crazydiskmark/images/atribuirImagem.txt
 crazydiskmark/images/directoryicon.png
 crazydiskmark/images/icon.png
 crazydiskmark/images/icon.xcf
