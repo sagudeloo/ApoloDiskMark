@@ -1,2 +1,3 @@
 humanfriendly
 PyQt5
+desktop_file
