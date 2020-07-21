@@ -17,7 +17,7 @@ crazydiskmark/images/icon.png
 crazydiskmark/images/icon.xcf
 crazydiskmark/images/logo.png
 crazydiskmark/images/logo.xcf
-crazydiskmark/images/screenshot.png
+crazydiskmark/images/shot.png
 crazydiskmark/images/starticon.png
 crazydiskmark/scripts/rnd4kq1t1read.sh
 crazydiskmark/scripts/rnd4kq1t1write.sh
