@@ -90,6 +90,10 @@ class MainWindow(QtWidgets.QMainWindow):
         super(MainWindow, self).__init__()
         uic.loadUi(f'{resource_path}/crazydiskmark.ui', self)
         # Init default values
+        self.labelDefaultStyle = """
+        border: 1px solid black;
+        border-radius: 5px;
+        """
         self.directoryLineEdit = self.findChild(QtWidgets.QLineEdit, 'directoryLineEdit')
         self.directoryLineEdit.setText(str(Path.home()))
         self.selectPushButton = self.findChild(QtWidgets.QPushButton, 'selectPushButton')
@@ -101,13 +105,21 @@ class MainWindow(QtWidgets.QMainWindow):
         self.actionAbout.triggered.connect(self.showAboutDialog)
         self.progressBar = self.findChild(QtWidgets.QProgressBar, 'progressBar')
         self.seq1mq8t1ReadLabel = self.findChild(QtWidgets.QLabel, 'seq1mq8t1ReadLabel')
+        self.seq1mq8t1ReadLabel.setStyleSheet(self.labelDefaultStyle)
         self.seq1mq8t1WriteLabel = self.findChild(QtWidgets.QLabel, 'seq1mq8t1WriteLabel')
+        self.seq1mq8t1WriteLabel.setStyleSheet(self.labelDefaultStyle)
         self.seq1mq1t1ReadLabel = self.findChild(QtWidgets.QLabel, 'seq1mq1t1ReadLabel')
+        self.seq1mq1t1ReadLabel.setStyleSheet(self.labelDefaultStyle)
         self.seq1mq1t1WriteLabel = self.findChild(QtWidgets.QLabel, 'seq1mq1t1WriteLabel')
+        self.seq1mq1t1WriteLabel.setStyleSheet(self.labelDefaultStyle)
         self.rnd4kq32t16ReadLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq32t16ReadLabel')
+        self.rnd4kq32t16ReadLabel.setStyleSheet(self.labelDefaultStyle)
         self.rnd4kq32t16WriteLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq32t16WriteLabel')
+        self.rnd4kq32t16WriteLabel.setStyleSheet(self.labelDefaultStyle)
         self.rnd4kq1t1ReadLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq1t1ReadLabel')
+        self.rnd4kq1t1ReadLabel.setStyleSheet(self.labelDefaultStyle)
         self.rnd4kq1t1WriteLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq1t1WriteLabel')
+        self.rnd4kq1t1WriteLabel.setStyleSheet(self.labelDefaultStyle)
         self.statusbar = self.findChild(QtWidgets.QStatusBar, 'statusbar')
         self.startPushButton = self.findChild(QtWidgets.QPushButton, 'startPushButton')
         self.startPushButton.setIcon(QtGui.QIcon(f'{resource_path}/images/starticon.png'))
