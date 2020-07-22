@@ -164,7 +164,7 @@ class MainWindow(QtWidgets.QMainWindow):
             shortcut.setTitle('Crazy DiskMark')
             shortcut.setWorkingDirectory(binaryDir)
             shortcut.setComment(
-                 'Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark')
+                'Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark')
             shortcut.setIcon(f'{resource_path}/images/icon.png')
             shortcut.setCategories('System;')
             shortcut.save()
@@ -207,11 +207,11 @@ class MainWindow(QtWidgets.QMainWindow):
             self.thread.operationsIndex = 0
         else:
             self.clearResults()
-            self.startPushButton.setText('Stop')
-            self.statusbar.showMessage('Running. Please wait, this may take several minutes...')
-            print('Starting benchmark...')
             # Verify if directory is writable
             if self.isWritable():
+                print('Starting benchmark...')
+                self.startPushButton.setText('Stop')
+                self.statusbar.showMessage('Running. Please wait, this may take several minutes...')
                 print('Directory writable. OK [Starting Thread]')
                 self.thread.operationsIndex = 0
                 self.thread.start()
@@ -230,6 +230,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.rnd4kq1t1WriteLabel.setText('')
         self.statusbar.showMessage('IDLE')
         self.thread.operationsIndex = 0
+        self.startPushButton.setText('Start')
 
     # show directory dialog
     def showDirectoryDialog(self):
