@@ -12,6 +12,8 @@ resource_path = os.path.dirname(__file__)
 
 
 class ThreadClass(QtCore.QThread):
+    bw_bytes = ''
+    operationIndex = 0
     operations = [
         {
             "prefix": "seq1mq8t1",
@@ -47,12 +49,21 @@ class ThreadClass(QtCore.QThread):
         }
     ]
 
-    operationsIndex = 0
     signal = QtCore.pyqtSignal(str, name='ThreadFinish')
     directory = os.getcwd()
 
     def __init__(self, parent=None):
         super(ThreadClass, self).__init__(parent)
+        self.finished.connect(self.threadFinished)
+
+    def threadFinished(self):
+        self.signal.emit(self.bw_bytes)
+        print('Finished QThread operationIndex = {}'.format(self.operationIndex))
+        self.operationIndex += 1
+        if self.operationIndex == len(self.operations):
+            print('all the jobs done.')
+        else:
+            self.start()
 
     @staticmethod
     def isEven(number):
@@ -63,28 +74,24 @@ class ThreadClass(QtCore.QThread):
 
     def run(self):
         # executing command
-        print(f'Running Thread [{self.operationsIndex}] Even? {self.isEven(self.operationsIndex)}')
-        cmd: str = '{}/scripts/{}{}.sh {}'.format(resource_path, self.operations[self.operationsIndex]['prefix'],
-                                                  self.operations[self.operationsIndex]['suffix'], self.directory)
+        print(f'Running Thread [{self.operationIndex}] Even? {self.isEven(self.operationIndex)}')
+        cmd: str = '{}/scripts/{}{}.sh {}'.format(resource_path, self.operations[self.operationIndex]['prefix'],
+                                                  self.operations[self.operationIndex]['suffix'], self.directory)
         print(f'Running [{cmd}]')
         bw_bytes = ''
         output = json.loads(subprocess.getoutput(cmd).encode('utf-8'))
-        print(output)
-        if self.isEven(self.operationsIndex):
+        # print(output)
+        if self.isEven(self.operationIndex):
             # This is read benchmark
-            bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['read']['bw_bytes']))
-            print(bw_bytes)
-
+            self.bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['read']['bw_bytes']))
         else:
             # This is write benchmark
-            bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['write']['bw_bytes']))
-            print(bw_bytes)
-
-        self.signal.emit(bw_bytes)
+            self.bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['write']['bw_bytes']))
 
 
 class MainWindow(QtWidgets.QMainWindow):
     thread = ThreadClass()
+    labelWidgets = []
 
     def __init__(self):
         super(MainWindow, self).__init__()
@@ -104,22 +111,18 @@ class MainWindow(QtWidgets.QMainWindow):
         self.actionAbout = self.findChild(QtWidgets.QAction, 'actionAbout')
         self.actionAbout.triggered.connect(self.showAboutDialog)
         self.progressBar = self.findChild(QtWidgets.QProgressBar, 'progressBar')
-        self.seq1mq8t1ReadLabel = self.findChild(QtWidgets.QLabel, 'seq1mq8t1ReadLabel')
-        self.seq1mq8t1ReadLabel.setStyleSheet(self.labelDefaultStyle)
-        self.seq1mq8t1WriteLabel = self.findChild(QtWidgets.QLabel, 'seq1mq8t1WriteLabel')
-        self.seq1mq8t1WriteLabel.setStyleSheet(self.labelDefaultStyle)
-        self.seq1mq1t1ReadLabel = self.findChild(QtWidgets.QLabel, 'seq1mq1t1ReadLabel')
-        self.seq1mq1t1ReadLabel.setStyleSheet(self.labelDefaultStyle)
-        self.seq1mq1t1WriteLabel = self.findChild(QtWidgets.QLabel, 'seq1mq1t1WriteLabel')
-        self.seq1mq1t1WriteLabel.setStyleSheet(self.labelDefaultStyle)
-        self.rnd4kq32t16ReadLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq32t16ReadLabel')
-        self.rnd4kq32t16ReadLabel.setStyleSheet(self.labelDefaultStyle)
-        self.rnd4kq32t16WriteLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq32t16WriteLabel')
-        self.rnd4kq32t16WriteLabel.setStyleSheet(self.labelDefaultStyle)
-        self.rnd4kq1t1ReadLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq1t1ReadLabel')
-        self.rnd4kq1t1ReadLabel.setStyleSheet(self.labelDefaultStyle)
-        self.rnd4kq1t1WriteLabel = self.findChild(QtWidgets.QLabel, 'rnd4kq1t1WriteLabel')
-        self.rnd4kq1t1WriteLabel.setStyleSheet(self.labelDefaultStyle)
+
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'seq1mq8t1ReadLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'seq1mq8t1WriteLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'seq1mq1t1ReadLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'seq1mq1t1WriteLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq32t16ReadLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq32t16WriteLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq1t1ReadLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq1t1WriteLabel'))
+        for label in self.labelWidgets:
+            label.setStyleSheet(self.labelDefaultStyle)
+
         self.statusbar = self.findChild(QtWidgets.QStatusBar, 'statusbar')
         self.startPushButton = self.findChild(QtWidgets.QPushButton, 'startPushButton')
         self.startPushButton.setIcon(QtGui.QIcon(f'{resource_path}/images/starticon.png'))
@@ -171,40 +174,14 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def receiveThreadfinish(self, val):
         print('Receiving signal ok ', val)
-        if self.thread.operationsIndex == 0:
-            self.seq1mq8t1ReadLabel.setText(val)
-        elif self.thread.operationsIndex == 1:
-            self.seq1mq8t1WriteLabel.setText(val)
-        elif self.thread.operationsIndex == 2:
-            self.seq1mq1t1ReadLabel.setText(val)
-        elif self.thread.operationsIndex == 3:
-            self.seq1mq1t1WriteLabel.setText(val)
-        elif self.thread.operationsIndex == 4:
-            self.rnd4kq32t16ReadLabel.setText(val)
-        elif self.thread.operationsIndex == 5:
-            self.rnd4kq32t16WriteLabel.setText(val)
-        elif self.thread.operationsIndex == 6:
-            self.rnd4kq1t1ReadLabel.setText(val)
-        else:
-            self.rnd4kq1t1WriteLabel.setText(val)
-
-        self.progressBar.setProperty('value', (self.thread.operationsIndex + 1) * 12.5)
-        self.thread.operationsIndex += 1
-        if len(self.thread.operations) == self.thread.operationsIndex:
-            print('Stoping all threads')
-            self.thread.quit()
-            self.statusbar.showMessage('IDLE')
-            self.startPushButton.setText('Start')
-            self.thread.operationsIndex = 0
-        else:
-            self.thread.start()
+        self.labelWidgets[self.thread.operationIndex].setText(val)
+        self.progressBar.setProperty('value', (self.thread.operationIndex + 1) * 12.5)
 
     def startBenchMark(self):
         if self.thread.isRunning():
             self.startPushButton.setText('Start')
             self.statusbar.showMessage('IDLE')
             self.thread.terminate()
-            self.thread.operationsIndex = 0
         else:
             self.clearResults()
             # Verify if directory is writable

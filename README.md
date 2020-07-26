@@ -35,7 +35,7 @@ $ sudo apt install fio
 ## Install
 
 ```bash
-$ pip3 install crazydiskmark --user
+$ pip3 install crazydiskmark
 $ crazydiskmark
 ```
 
