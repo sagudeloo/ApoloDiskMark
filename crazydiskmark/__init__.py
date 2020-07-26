@@ -176,6 +176,9 @@ class MainWindow(QtWidgets.QMainWindow):
         print('Receiving signal ok ', val)
         self.labelWidgets[self.thread.operationIndex].setText(val)
         self.progressBar.setProperty('value', (self.thread.operationIndex + 1) * 12.5)
+        if self.thread.operationIndex == 7:
+            self.startPushButton.setText('Start')
+            self.statusbar.showMessage('IDLE')
 
     def startBenchMark(self):
         if self.thread.isRunning():
