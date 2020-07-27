@@ -158,7 +158,6 @@ class MainWindow(QtWidgets.QMainWindow):
         else:
             print('Desktop entry not exists [creating]')
             print(f'binary: {binaryFile}')
-
             print(f'desktop Dir: {desktopDir}')
             if not os.path.isdir(desktopDir):
                 os.makedirs(desktopDir)

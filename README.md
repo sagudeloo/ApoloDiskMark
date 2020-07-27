@@ -39,6 +39,13 @@ $ pip3 install crazydiskmark
 $ crazydiskmark
 ```
 
+Please, remember: **$HOME/.local/bin** must to be included in your **$PATH** variable!
+
+Edit your $HOME/.bashrc and put the following line on the end off file:
+
+`export PATH=$PATH:~/.local/bin`
+
+
 ## Screenshot
 
 ![Screenshot](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/shot.png)
