@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 # update aboutdialog.ui with correct version
-version = '0.2.44'
+version = '0.2.45'
 pattern = "([0-9]+.[0-9]+.[0-9]+)"
 newlines = []
 dialog_filename = 'crazydiskmark/aboutdialog.ui'
@@ -41,7 +41,8 @@ setuptools.setup(
     install_requires=[
         'humanfriendly',
         'PyQt5',
-        'desktop_file'
+        'desktop_file',
+        'coloredlogs'
     ],
     include_package_data=True,
     zip_safe=False,

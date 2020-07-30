@@ -7,11 +7,13 @@ import shutil
 from pathlib import Path
 from PyQt5 import QtWidgets, uic, QtCore, QtGui
 import desktop_file
+import logging
 
 resource_path = os.path.dirname(__file__)
 
 
 class ThreadClass(QtCore.QThread):
+    logger = logging.getLogger(__name__)
     bw_bytes = ''
     operationIndex = 0
     operations = [
@@ -58,10 +60,10 @@ class ThreadClass(QtCore.QThread):
 
     def threadFinished(self):
         self.signal.emit(self.bw_bytes)
-        print('Finished QThread operationIndex = {}'.format(self.operationIndex))
+        self.logger.info('Finished QThread operationIndex = {}'.format(self.operationIndex))
         self.operationIndex += 1
         if self.operationIndex == len(self.operations):
-            print('all the jobs done.')
+            self.logger.info('all the jobs done.')
         else:
             self.start()
 
@@ -74,13 +76,13 @@ class ThreadClass(QtCore.QThread):
 
     def run(self):
         # executing command
-        print(f'Running Thread [{self.operationIndex}] Even? {self.isEven(self.operationIndex)}')
+        self.logger.info(f'Running Thread [{self.operationIndex}] Even? {self.isEven(self.operationIndex)}')
         cmd: str = '{}/scripts/{}{}.sh {}'.format(resource_path, self.operations[self.operationIndex]['prefix'],
                                                   self.operations[self.operationIndex]['suffix'], self.directory)
-        print(f'Running [{cmd}]')
+        self.logger.info(f'Running [{cmd}]')
         bw_bytes = ''
         output = json.loads(subprocess.getoutput(cmd).encode('utf-8'))
-        # print(output)
+
         if self.isEven(self.operationIndex):
             # This is read benchmark
             self.bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['read']['bw_bytes']))
@@ -90,6 +92,7 @@ class ThreadClass(QtCore.QThread):
 
 
 class MainWindow(QtWidgets.QMainWindow):
+    logger = logging.getLogger(__name__)
     thread = ThreadClass()
     labelWidgets = []
 
@@ -154,11 +157,11 @@ class MainWindow(QtWidgets.QMainWindow):
         binaryDir = os.path.dirname(binaryFile)
         desktopDir = f'{Path.home()}/.local/share/applications'
         if os.path.exists(f'{desktopDir}/crazydiskmark.desktop'):
-            print('Desktop entry exists [bypass]')
+            self.logger.info('Desktop entry exists [bypass]')
         else:
-            print('Desktop entry not exists [creating]')
-            print(f'binary: {binaryFile}')
-            print(f'desktop Dir: {desktopDir}')
+            self.logger.info('Desktop entry not exists [creating]')
+            self.logger.info(f'binary: {binaryFile}')
+            self.logger.info(f'desktop Dir: {desktopDir}')
             if not os.path.isdir(desktopDir):
                 os.makedirs(desktopDir)
 
@@ -172,7 +175,7 @@ class MainWindow(QtWidgets.QMainWindow):
             shortcut.save()
 
     def receiveThreadfinish(self, val):
-        print('Receiving signal ok ', val)
+        self.logger.info('Receiving signal ok ', val)
         self.labelWidgets[self.thread.operationIndex].setText(val)
         self.progressBar.setProperty('value', (self.thread.operationIndex + 1) * 12.5)
         if self.thread.operationIndex == 7:
@@ -188,14 +191,14 @@ class MainWindow(QtWidgets.QMainWindow):
             self.clearResults()
             # Verify if directory is writable
             if self.isWritable():
-                print('Starting benchmark...')
+                self.logger.info('Starting benchmark...')
                 self.startPushButton.setText('Stop')
                 self.statusbar.showMessage('Running. Please wait, this may take several minutes...')
-                print('Directory writable. OK [Starting Thread]')
+                self.logger.info('Directory writable. OK [Starting Thread]')
                 self.thread.operationsIndex = 0
                 self.thread.start()
             else:
-                print('Directory not writable. [ERROR]')
+                self.logger.info('Directory not writable. [ERROR]')
 
     def clearResults(self):
         self.progressBar.setProperty('value', 0)
@@ -213,22 +216,22 @@ class MainWindow(QtWidgets.QMainWindow):
 
     # show directory dialog
     def showDirectoryDialog(self):
-        print('Show Directory Dialog!')
+        self.logger.info('Show Directory Dialog!')
         dialog = QtWidgets.QFileDialog()
         dialog.setFileMode(QtWidgets.QFileDialog.DirectoryOnly)
         if dialog.exec():
             self.thread.directory = dialog.selectedFiles()[0]
-            print(f'Directory ===> {self.thread.directory}')
+            self.logger.info(f'Directory ===> {self.thread.directory}')
             self.directoryLineEdit.setText(self.thread.directory)
 
     def isWritable(self):
         self.thread.directory = self.directoryLineEdit.text()
-        print(f'Verify if dir {self.thread.directory} is writable...')
+        self.logger.info(f'Verify if dir {self.thread.directory} is writable...')
         if os.access(self.thread.directory, os.W_OK):
-            print(f'{self.thread.directory} is writable.')
+            self.logger.info(f'{self.thread.directory} is writable.')
             return True
         else:
-            print(f'{self.thread.directory} NOT writable.')
+            self.logger.info(f'{self.thread.directory} NOT writable.')
             errorDialog = QtWidgets.QMessageBox()
             errorDialog.setIcon(QtWidgets.QMessageBox.Warning)
             errorDialog.setText(f'Cannot write to directory {self.thread.directory}')

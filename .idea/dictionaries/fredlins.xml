@@ -2,6 +2,7 @@
   <dictionary name="fredlins">
     <words>
       <w>aboutdialog</w>
+      <w>coloredlogs</w>
       <w>conecta</w>
       <w>configura</w>
       <w>crazydiskmark</w>
@@ -10,7 +11,10 @@
       <w>humanfriendly</w>
       <w>iodepth</w>
       <w>ioengine</w>
+      <w>lins</w>
+      <w>linuxconfig</w>
       <w>numjobs</w>
+      <w>rmtree</w>
       <w>starticon</w>
       <w>statusbar</w>
       <w>stoping</w>
