@@ -35,9 +35,11 @@ Description: {description}
 # Directory configs
 currentDir = os.getcwd()
 debianDir = f'{currentDir}/{package}/DEBIAN'
-binDir = f'{currentDir}/{package}/usr/bin'
-dPackagesDir = f'{currentDir}/{package}/usr/lib/python3/dist-packages'
-applicationsDir = f'{currentDir}/{package}/usr/share/applications'
+binDir = f'{currentDir}/usr/bin'
+dPackagesDir = f'{currentDir}/usr/lib/python3/dist-packages'
+applicationsDir = f'{currentDir}/usr/share/applications'
+distDebianDir = f'{currentDir}/dist-debian'
+finalDebian = f'{package}-{version}_amd64.deb'
 
 logger.info(f"current dir is [ {currentDir} ]")
 
@@ -68,18 +70,36 @@ logger.info('Creating dist-packages dir')
 os.system(f'mkdir -p {dPackagesDir}')
 
 logger.info('Copying sources and necessary files to dist-packages dir')
-cmd = f'ls {currentDir}/{package}'
+cmd = f'cp -Rv {currentDir}/{package} {dPackagesDir}'
 logger.info(f'command: {cmd}')
 os.system(cmd)
 
-# logger.info(f'Creating applications directory in {applicationsDir}')
-# os.system(f'mkdir -p {applicationsDir}')
+logger.info(f'Creating applications directory in {applicationsDir}')
+os.system(f'mkdir -p {applicationsDir}')
 
-# logger.info('Copying desktop file to applications directory....')
-# os.system(f'cp {currentDir}/{package}/{package}.desktop {applicationsDir}')
+logger.info('Copying desktop file to applications dir...')
+os.system(f'cp {currentDir}/{package}/{package}.desktop {applicationsDir}')
 
-# logger.info('Make debian package')
-# os.system(f'dpkg-deb --build {package}')
+logger.info(f'Moving usr structure directory to {currentDir}/{package}')
+os.system(f'mv {currentDir}/usr {currentDir}/{package}')
 
-# logger.info('Delete debian directory. No more necessary!')
-# shutil.rmtree(f'{currentDir}/debian')
+
+logger.info('Make debian package')
+os.system(f'dpkg-deb --build {package}')
+
+logger.info('Rename package...')
+os.system(f'mv {currentDir}/{package}.deb {currentDir}/{finalDebian}')
+
+logger.info('Moving debian to debian-dist directory')
+if not os.path.isdir(f'{distDebianDir}'):
+    os.system(f'mkdir {distDebianDir}')
+
+os.system(f'mv {finalDebian} {distDebianDir}')
+
+
+# logger.info('Remove unecessary directories...')
+shutil.rmtree(f'{debianDir}')
+shutil.rmtree(f'{binDir}')
+shutil.rmtree(f'{dPackagesDir}')
+shutil.rmtree(f'{applicationsDir}')
+shutil.rmtree(f'{currentDir}/usr')
