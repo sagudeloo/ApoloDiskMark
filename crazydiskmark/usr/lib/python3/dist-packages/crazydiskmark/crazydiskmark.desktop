@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=/usr/bin/crazydiskmark
-Path=/usr/bin
-Comment=Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark
-Icon=/usr/lib/python3/dist-packages/crazydiskmark/images/icon.png
-Categories=System;
-Name=Crazy DiskMark
