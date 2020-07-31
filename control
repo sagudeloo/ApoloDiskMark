@@ -1,9 +1,0 @@
-Package: crazydiskmark
-Version: 0.2.44
-Section: custom
-Priority: optional
-Architecture: all
-Essential: no
-Installed-Size: 1024
-Maintainer: Fred Lins <fredcox@gmail.com>
-Description: Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark.
