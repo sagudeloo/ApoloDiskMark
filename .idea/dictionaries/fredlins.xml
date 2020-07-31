@@ -11,6 +11,7 @@
       <w>humanfriendly</w>
       <w>iodepth</w>
       <w>ioengine</w>
+      <w>libxcb</w>
       <w>lins</w>
       <w>linuxconfig</w>
       <w>numjobs</w>

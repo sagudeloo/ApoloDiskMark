@@ -28,6 +28,7 @@ Priority: optional
 Architecture: all
 Essential: no
 Installed-Size: 1024
+Depends: python3:any, python3-pyqt5, libxcb1
 Maintainer: Fred Lins <fredcox@gmail.com>
 Description: {description}
 """
