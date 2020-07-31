@@ -20,6 +20,7 @@
       <w>statusbar</w>
       <w>stoping</w>
       <w>threadfinish</w>
+      <w>unecessary</w>
     </words>
   </dictionary>
 </component>

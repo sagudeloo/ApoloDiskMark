@@ -33,6 +33,10 @@ Maintainer: Fred Lins <fredcox@gmail.com>
 Description: {description}
 """
 
+dhRules = """%:
+          dh $@ --with python-virtualenv
+"""
+
 # Directory configs
 currentDir = os.getcwd()
 debianDir = f'{currentDir}/{package}/DEBIAN'
@@ -100,7 +104,6 @@ os.system(f'mv {finalDebian} {distDebianDir}')
 
 # logger.info('Remove unecessary directories...')
 shutil.rmtree(f'{debianDir}')
-# shutil.rmtree(f'{binDir}')
 shutil.rmtree(f'{dPackagesDir}')
 shutil.rmtree(f'{applicationsDir}')
 shutil.rmtree(f'{currentDir}/usr')
