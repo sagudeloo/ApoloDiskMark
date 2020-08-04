@@ -154,7 +154,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # show window
         self.show()
         # binaryFile = shutil.which('crazydiskmark')
-        # binaryDir = os.path.dirname(binaryFile)
+        binaryDir = f'{Path.home()}/.local/bin/'
         desktopDir = f'{Path.home()}/.local/share/applications'
         if os.path.exists(f'{desktopDir}/crazydiskmark.desktop'):
             self.logger.info('Desktop entry exists [bypass]')
@@ -164,9 +164,9 @@ class MainWindow(QtWidgets.QMainWindow):
             if not os.path.isdir(desktopDir):
                 os.makedirs(desktopDir)
 
-            shortcut = desktop_file.Shortcut(desktopDir, "crazydiskmark", '/usr/bin/crazydiskmark')
+            shortcut = desktop_file.Shortcut(desktopDir, "crazydiskmark", f'{binaryDir}/crazydiskmark')
             shortcut.setTitle('Crazy DiskMark')
-            shortcut.setWorkingDirectory('/usr/bin')
+            shortcut.setWorkingDirectory(f'{binaryDir}')
             shortcut.setComment(
                 'Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark')
             shortcut.setIcon(f'{resource_path}/images/icon.png')

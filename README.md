@@ -29,7 +29,7 @@ fio-3.16
 
 ```bash
 $ sudo apt update
-$ sudo apt install fio
+$ sudo apt install fio python3-pip
 ```
 
 ## Install
