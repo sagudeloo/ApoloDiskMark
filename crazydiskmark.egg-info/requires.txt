@@ -1,4 +1,0 @@
-PyQt5
-coloredlogs
-desktop_file
-humanfriendly
