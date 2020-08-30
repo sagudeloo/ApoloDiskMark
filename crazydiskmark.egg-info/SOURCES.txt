@@ -6,6 +6,7 @@ bin/crazydiskmark
 crazydiskmark/__init__.py
 crazydiskmark/aboutdialog.ui
 crazydiskmark/crazydiskmark.ui
+crazydiskmark/mainwindow.py
 crazydiskmark.egg-info/PKG-INFO
 crazydiskmark.egg-info/SOURCES.txt
 crazydiskmark.egg-info/dependency_links.txt
