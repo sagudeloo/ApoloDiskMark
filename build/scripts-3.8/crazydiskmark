@@ -1,10 +1,10 @@
-#!/usr/bin/python3 -Es
+#!python -Es
 import sys
 from PyQt5 import QtWidgets
+import crazydiskmark
 import coloredlogs
 import logging
 import os
-import crazydiskmark.mainwindow
 
 if __name__ == '__main__':
     os.environ['QT_LOGGING_RULES'] = "qt5ct.debug=false"
@@ -12,6 +12,6 @@ if __name__ == '__main__':
     coloredlogs.install()
     logger.info('Starting...')
     app = QtWidgets.QApplication(sys.argv)
-    window = crazydiskmark.mainwindow.MainWindow()
+    window = crazydiskmark.MainWindow()
     app.exec_()
 
