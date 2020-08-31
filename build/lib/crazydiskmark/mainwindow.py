@@ -154,7 +154,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # show window
         self.show()
         # binaryFile = shutil.which('crazydiskmark')
-        binaryDir = f'{Path.home()}/.local/bin/'
+        binaryDir = f'/usr/bin'
         desktopDir = f'{Path.home()}/.local/share/applications'
         if os.path.exists(f'{desktopDir}/crazydiskmark.desktop'):
             self.logger.info('Desktop entry exists [bypass]')
