@@ -5,7 +5,7 @@ import re
 import hashlib
 from bs4 import BeautifulSoup
 import requests
-import fileinput
+import shutil
 
 url = 'https://pypi.org/project/crazydiskmark/#files'
 
@@ -88,15 +88,22 @@ logger.info('Updating tarball URL in PKGBUILD...')
 newValue = f"source=(\"{fileName}::{tarBallURL}\")"
 
 updateFile('PKGBUILD', 'source=', newValue)
-
 logger.info('add files PKGBUILD and .SRCINFO to repository...')
 os.system('git add PKGBUILD .SRCINFO')
+
+
+if os.path.isdir('src/'):
+    os.system('git rm -r -f src/')
+    shutil.rmtree('src/')
+
+if os.path.isdir('pkg/'):
+    os.system('git rm -r -f pkg/')
+    shutil.rmtree('pkg/')
 
 logger.info('commit changes....')
 os.system(f'git commit -m "update to release {version}"')
 
 logger.info('git pushing....')
-
 os.system('git push')
 
 os.system('cd ../')
