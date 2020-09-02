@@ -1,6 +1,6 @@
 Source: crazydiskmark
 Maintainer: Fred Lins <fredcox@gmail.com>
-Build-Depends: debhelper,dh-python,python3-all,python3-setuptools
+Build-Depends: debhelper,dh-python,python3-all,python3-setuptools,python3-coloredlogs,python3-humanfriendly,python3-pyqt5,pyqt5-dev,pyqt5-dev-tools
 Section: devel
 Priority: optional
 Standards-Version: 3.9.6
