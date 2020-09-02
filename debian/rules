@@ -5,4 +5,5 @@ export PYBUILD_NAME = random-quote
 
 %:
 	dh $@ --with python3 --buildsystem=pybuild
+	pip3 install desktop-file
 
