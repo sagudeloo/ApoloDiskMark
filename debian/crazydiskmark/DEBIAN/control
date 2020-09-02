@@ -1,0 +1,9 @@
+Package: crazydiskmark
+Version: 0.3.0
+Architecture: all
+Maintainer: Fred Lins <fredcox@gmail.com>
+Installed-Size: 1340
+Depends: python3-coloredlogs, python3-humanfriendly, python3:any (>= 3.6~), python3-requests, fio
+Section: devel
+Priority: optional
+Description: Utility to benchmark SSD disks on linux and produce results like CrystalDiskMark.
