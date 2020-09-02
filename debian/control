@@ -1,12 +1,21 @@
 Source: crazydiskmark
-Maintainer: Fred Lins <fredcox@gmail.com>
-Build-Depends: debhelper,dh-python,python3-all,python3-setuptools,python3-coloredlogs,python3-humanfriendly,python3-pyqt5,pyqt5-dev,pyqt5-dev-tools
 Section: devel
 Priority: optional
-Standards-Version: 3.9.6
-X-Python3-Version: >= 3.6
+Maintainer: Fred Lins <fredcox@gmail.com>
+Build-Depends:	debhelper (>=9),
+              	dh-python,
+              	python-all,
+               	python-setuptools,
+		python3-coloredlogs,
+		python3-humanfriendly,
+		python3-pyqt5,
+		pyqt5-dev,
+		pyqt5-dev-tools		
+Standards-Version: 4.5.0
+X-Python3-Version: >= 3.8
+Homepage: https://github.com/fredcox/crazydiskmark
 
 Package: crazydiskmark
 Architecture: all
-Description: Utility to benchmark SSD disks on linux and produce results like CrystalDiskMark.
-Depends: ${python3:Depends},python3-requests,fio
+Depends: ${python3:Depends},python3-requests
+Description: Linux disk benchmark tool like CrystalDiskMark
