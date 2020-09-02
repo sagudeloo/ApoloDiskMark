@@ -4,14 +4,13 @@ summary: Linux disk benchmark tool like CrystalDiskMark
 description: |
   Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results 
   like CrystalDiskMark.
-base: core20
+base: core18
 confinement: devmode
 
 
 parts:
   crazydiskmark:
     plugin: python
-    python-version: python3
     source: https://github.com/fredcox/crazydiskmark.git
     stage-packages:
       - python-six
