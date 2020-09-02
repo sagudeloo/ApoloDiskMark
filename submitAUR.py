@@ -41,9 +41,6 @@ coloredlogs.install()
 
 logger.info('Preparing to submit AUR Package...')
 os.chdir('crazydiskmark-aur/')
-logger.info('Printing .SRCINFO...')
-os.system('makepkg --printsrcinfo > .SRCINFO')
-
 
 logger.info('Get current version...')
 # update aboutdialog.ui with correct version
@@ -89,6 +86,13 @@ newValue = f"source=(\"{fileName}::{tarBallURL}\")"
 
 updateFile('PKGBUILD', 'source=', newValue)
 logger.info('add files PKGBUILD and .SRCINFO to repository...')
+
+logger.info('Printing .SRCINFO...')
+if os.path.isfile('.SRCINFO'):
+    os.remove('.SRCINFO')
+
+os.system('makepkg --printsrcinfo > .SRCINFO')
+
 os.system('git add PKGBUILD .SRCINFO')
 
 
@@ -107,3 +111,12 @@ logger.info('git pushing....')
 os.system('git push')
 
 os.system('cd ../')
+
+if os.path.isdir('dist/'):
+    shutil.rmtree('dist/')
+
+if os.path.isdir('build/'):
+    shutil.rmtree('build/')
+
+if os.path.isdir('crazydiskmark.egg-info/'):
+    shutil.rmtree('crazydiskmark.egg-info/')

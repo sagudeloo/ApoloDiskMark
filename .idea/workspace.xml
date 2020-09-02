@@ -19,10 +19,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="No snap, no more snaps.">
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Prepare to release 0.3.6">
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/aboutdialog.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/crazydiskmark.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/directoryicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/icon.xcf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/logo.xcf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/shot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/starticon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/mainwindow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq1t1read.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq1t1write.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq32t16read.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq32t16write.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq1t1read.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq1t1write.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq8t1read.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq8t1write.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/scripts-3.8/crazydiskmark" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crazydiskmark.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crazydiskmark.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crazydiskmark.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crazydiskmark.egg-info/not-zip-safe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crazydiskmark.egg-info/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crazydiskmark.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/crazydiskmark-0.3.6-py2.py3-none-any.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/crazydiskmark-0.3.6.tar.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submitAUR.py" beforeDir="false" afterPath="$PROJECT_DIR$/submitAUR.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599013328063</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Prepare to release 0.3.6">
+      <created>1599013391501</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599013391501</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,7 +223,8 @@
     <MESSAGE value="changing python version requirement to 3.6... maybe not problem :rocket: :bug: :toolbox:" />
     <MESSAGE value="Preparing to release snap package :toolbox:" />
     <MESSAGE value="No snap, no more snaps." />
-    <option name="LAST_COMMIT_MESSAGE" value="No snap, no more snaps." />
+    <MESSAGE value="Prepare to release 0.3.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare to release 0.3.6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599006041990">
@@ -214,10 +251,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599013336858">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599013394959">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599013336858" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599013394959" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

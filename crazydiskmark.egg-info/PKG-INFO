@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: crazydiskmark
+Version: 0.3.6
+Summary: Linux disk benchmark tool like CrystalDiskMark
+Home-page: https://github.com/fredcox/crazydiskmark
+Author: Fred Cox
+Author-email: fredcox@gmail.com
+License: UNKNOWN
+Description: # Crazy DiskMark
+        
+        ![Crazy DiskMark - Logo](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png)
+        
+        * [About](#about)
+        * [Dependencies](#dependencies)
+        * [Install](#install)
+        * [Buy me a Coffee](#buy-me-a-coffee)
+        * [License](#license)
+        
+        ## Please, this program is made to run in SSD´s only. Don´t try to run this app in mechanical disks. Thank you. 
+        
+        ## About
+        
+        ***Crazy DiskMark*** is a utility to benchmark ***SSD*** disks on linux and produce results like ***CrystalDiskMark***.
+        
+        ## Dependencies
+        
+        1. Python version 3.8 or later
+        2. fio ***(Flexible I/O Tester)*** version 3.16 or later
+        
+        if you want know about fio version in your system:
+        
+        ```bash
+        $ fio --version
+        fio-3.16
+        ``` 
+        
+        ### Ubuntu, Debian and derivatives (Linux Mint, MX Linux)
+        
+        ```bash
+        $ sudo apt update
+        $ sudo apt install fio python3-pip
+        ```
+        
+        ## Install
+        
+        ```bash
+        $ pip3 install crazydiskmark
+        $ crazydiskmark
+        ```
+        
+        Please, remember: **$HOME/.local/bin** must to be included in your **$PATH** variable!
+        
+        Edit your $HOME/.bashrc and put the following line on the end off file:
+        
+        `export PATH=$PATH:~/.local/bin`
+        
+        
+        ## Screenshot
+        
+        ![Screenshot](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/shot.png)
+        
+        ## Buy me a Coffee
+        
+        <a href="https://www.buymeacoffee.com/fredcox" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+        
+        
+        ## License 
+        
+        This project use MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
