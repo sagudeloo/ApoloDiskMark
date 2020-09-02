@@ -4,8 +4,9 @@ Priority: optional
 Maintainer: Fred Lins <fredcox@gmail.com>
 Build-Depends:	debhelper (>=9),
               	dh-python,
-              	python-all,
-               	python-setuptools,
+		python3,
+              	python3-all,
+               	python3-setuptools,
 		python3-coloredlogs,
 		python3-humanfriendly,
 		python3-pyqt5,
@@ -18,6 +19,9 @@ Homepage: https://github.com/fredcox/crazydiskmark
 Package: crazydiskmark
 Architecture: all
 Depends:${python3:Depends},
+	python3,
+	python3-all,
+	python3-setuptools,
 	python3-coloredlogs,
 	python3-humanfriendly,
 	python3-pyqt5,
