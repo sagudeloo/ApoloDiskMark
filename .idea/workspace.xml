@@ -20,40 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Preparing to release snap package :toolbox:">
-      <change afterPath="$PROJECT_DIR$/crazydiskmark_0.3.5_amd64.snap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/aboutdialog.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/crazydiskmark.ui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/images/directoryicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/images/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/images/icon.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/images/logo.xcf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/images/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/images/shot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/images/starticon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/mainwindow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq1t1read.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq1t1write.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq32t16read.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq32t16write.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq1t1read.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq1t1write.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq8t1read.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq8t1write.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts-3.8/crazydiskmark" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark-aur" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark-aur" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark.egg-info/not-zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/crazydiskmark-0.3.2-py2.py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/crazydiskmark-0.3.2.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snapcraft.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/snapcraft.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599006457164</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Preparing to release snap package :toolbox:">
+      <created>1599010100422</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599010100422</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,10 +205,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599006460926">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599010103221">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599006460926" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599010103221" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
