@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="All right with AUR package. 🚀🚀🚀🚀🚀🚀">
-      <change afterPath="$PROJECT_DIR$/debian/postinst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usr/share/applications/crazydiskmark.desktop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usr/share/icons/hicolor/48x48/apps/crazydiskmark_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debian/changelog" beforeDir="false" afterPath="$PROJECT_DIR$/debian/changelog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/submitLaunchpad.sh" beforeDir="false" afterPath="$PROJECT_DIR$/submitLaunchpad.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debian/files" beforeDir="false" afterPath="$PROJECT_DIR$/debian/files" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/crazydiskmark-aur" />
   </component>
   <component name="ProjectId" id="1gnDzB2wmLsKhdYE2w8gX3AcJiZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -263,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599102146357</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="All right with AUR package. 🚀🚀🚀🚀🚀🚀">
+      <created>1599103567804</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1599103567804</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,10 +332,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599102149945">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599103571923">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599102149945" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599103571923" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
