@@ -91,10 +91,6 @@ logger.info('Printing .SRCINFO...')
 if os.path.isfile('.SRCINFO'):
     os.remove('.SRCINFO')
 
-os.system('makepkg --printsrcinfo > .SRCINFO')
-
-os.system('git add PKGBUILD .SRCINFO')
-
 if os.path.isfile(f'crazydiskmark-${version}.tar.gz'):
     os.system(f'rm -rfv crazydiskmark-${version}.tar.gz')
 
@@ -110,15 +106,8 @@ logger.info('commit changes....')
 os.system(f'git commit -m "update to release {version}"')
 
 logger.info('git pushing....')
+os.system('makepkg --printsrcinfo > .SRCINFO')
+os.system('git add PKGBUILD .SRCINFO')
 os.system('git push')
 
 os.system('cd ../')
-
-if os.path.isdir('dist/'):
-    shutil.rmtree('dist/')
-
-if os.path.isdir('build/'):
-    shutil.rmtree('build/')
-
-if os.path.isdir('crazydiskmark.egg-info/'):
-    shutil.rmtree('crazydiskmark.egg-info/')
