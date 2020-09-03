@@ -85,9 +85,7 @@ logger.info('Updating tarball URL in PKGBUILD...')
 newValue = f"source=(\"{fileName}::{tarBallURL}\")"
 
 updateFile('PKGBUILD', 'source=', newValue)
-logger.info('add files PKGBUILD and .SRCINFO to repository...')
 
-logger.info('Printing .SRCINFO...')
 if os.path.isfile('.SRCINFO'):
     os.remove('.SRCINFO')
 
@@ -102,12 +100,13 @@ if os.path.isdir('pkg/'):
     os.system('git rm -r -f pkg/')
     shutil.rmtree('pkg/')
 
+logger.info('Printing .SRCINFO...')
+os.system('makepkg --printsrcinfo > .SRCINFO')
+logger.info('add files PKGBUILD and .SRCINFO to repository...')
+os.system('git add PKGBUILD .SRCINFO')
 logger.info('commit changes....')
 os.system(f'git commit -m "update to release {version}"')
-
 logger.info('git pushing....')
-os.system('makepkg --printsrcinfo > .SRCINFO')
-os.system('git add PKGBUILD .SRCINFO')
 os.system('git push')
 
 os.system('cd ../')
