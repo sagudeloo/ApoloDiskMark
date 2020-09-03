@@ -1,5 +1,6 @@
 include crazydiskmark/README.me
 include crazydiskmark/LICENSE
 include crazydiskmark/*.ui
+include crazydiskmark/crazydiskmark.desktop
 include crazydiskmark/images/*
 include crazydiskmark/scripts/*
