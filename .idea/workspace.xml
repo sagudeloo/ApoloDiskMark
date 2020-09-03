@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Removing files">
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="modifying license file :rocket: :space_invader: 🇪🇸:space_invader:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debian/copyright" beforeDir="false" afterPath="$PROJECT_DIR$/debian/copyright" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish.sh" beforeDir="false" afterPath="$PROJECT_DIR$/publish.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599094224026</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="modifying license file :rocket: :space_invader: 🇪🇸:space_invader:">
+      <created>1599094339017</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599094339017</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,37 +243,38 @@
     <MESSAGE value="Preparing to docker :rocket: :bug: :small_airplane: :airplane: :airplane:" />
     <MESSAGE value="Removing desktop file no more necessary :rocket:" />
     <MESSAGE value="Removing files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing files" />
+    <MESSAGE value="modifying license file :rocket: :space_invader: :space_invader:" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifying license file :rocket: :space_invader: :space_invader:" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599006041990">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1599006041990" />
-    <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599094093069">
+    <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599094371824">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599094093069" />
-    <state width="2065" height="275" key="GridCell.Tab.0.center" timestamp="1599094093068">
+    <state width="2065" height="275" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599094371824" />
+    <state width="2065" height="275" key="GridCell.Tab.0.center" timestamp="1599094371824">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599094093068" />
-    <state width="2065" height="275" key="GridCell.Tab.0.left" timestamp="1599094093068">
+    <state width="2065" height="275" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599094371824" />
+    <state width="2065" height="275" key="GridCell.Tab.0.left" timestamp="1599094371824">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599094093068" />
-    <state width="2065" height="275" key="GridCell.Tab.0.right" timestamp="1599094093069">
+    <state width="2065" height="275" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599094371824" />
+    <state width="2065" height="275" key="GridCell.Tab.0.right" timestamp="1599094371824">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599094093069" />
+    <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599094371824" />
     <state x="529" y="155" key="SettingsEditor" timestamp="1598741842764">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599094232857">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599094344693">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599094232857" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599094344693" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
