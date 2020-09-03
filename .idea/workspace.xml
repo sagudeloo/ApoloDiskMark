@@ -19,241 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Preparing to docker :rocket: :bug: :small_airplane: :airplane: :airplane:">
-      <change afterPath="$PROJECT_DIR$/.eggs/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/COPYING.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2html.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2html4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2html5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2latex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2man.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2odt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2odt_prepstyles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2pseudoxml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2s5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2xetex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rst2xml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/scripts/rstpep2html.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/EGG-INFO/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/examples.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/frontend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/io.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/af.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/ca.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/cs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/da.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/de.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/eo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/es.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/fa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/fi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/fr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/gl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/he.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/it.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/ja.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/ko.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/lt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/lv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/nl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/pt_br.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/ru.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/sk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/sv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/zh_cn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/languages/zh_tw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/nodes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/null.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/admonitions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/body.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/html.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/images.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/misc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/parts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/references.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/directives/tables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isoamsa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isoamsb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isoamsc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isoamsn.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isoamso.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isoamsr.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isobox.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isocyr1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isocyr2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isodia.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isogrk1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isogrk2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isogrk3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isogrk4-wide.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isogrk4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isolat1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isolat2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isomfrk-wide.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isomfrk.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isomopf-wide.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isomopf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isomscr-wide.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isomscr.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isonum.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isopub.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/isotech.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/mmlalias.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/mmlextra-wide.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/mmlextra.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/s5defs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/xhtml1-lat1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/xhtml1-special.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/include/xhtml1-symbol.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/af.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/ca.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/cs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/da.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/de.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/en.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/eo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/es.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/fa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/fi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/fr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/gl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/he.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/it.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/ja.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/ko.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/lt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/lv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/nl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/pl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/pt_br.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/ru.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/sk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/sv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/zh_cn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/languages/zh_tw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/roles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/states.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/parsers/rst/tableparser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/readers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/readers/doctree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/readers/pep.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/readers/standalone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/statemachine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/components.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/frontmatter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/misc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/parts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/peps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/references.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/universal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/transforms/writer_aux.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/code_analyzer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/error_reporting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/math/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/math/latex2mathml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/math/math2html.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/math/tex2mathml_extern.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/math/tex2unichar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/math/unichar2tex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/punctuation_chars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/roman.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/smartquotes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/utils/urischemes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/_html_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/docutils_xml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/html4css1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/html4css1/html4css1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/html4css1/template.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/html5_polyglot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/html5_polyglot/math.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/html5_polyglot/minimal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/html5_polyglot/plain.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/html5_polyglot/template.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/latex2e/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/latex2e/default.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/latex2e/titlepage.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/latex2e/xelatex.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/manpage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/null.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/odf_odt/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/odf_odt/pygmentsformatter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/odf_odt/styles.odt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/pep_html/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/pep_html/pep.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/pep_html/template.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/pseudoxml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/big-black/__base__" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/big-black/framing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/big-black/pretty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/big-white/framing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/big-white/pretty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/framing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/iepngfix.htc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/opera.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/outline.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/pretty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/print.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/s5-core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/slides.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/default/slides.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/medium-black/__base__" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/medium-black/pretty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/medium-white/framing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/medium-white/pretty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/small-black/__base__" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/small-black/pretty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/small-white/framing.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/s5_html/themes/small-white/pretty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eggs/docutils-0.16-py3.8.egg/docutils/writers/xetex/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/aboutdialog.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/crazydiskmark.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/directoryicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/icon.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/logo.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/images/starticon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/mainwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq1t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq1t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq32t16read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/rnd4kq32t16write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq1t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq1t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq8t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/crazydiskmark/scripts/seq1mq8t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scripts-3.8/crazydiskmark" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/crazydiskmark-0.4.1-py2.py3-none-any.whl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/crazydiskmark-0.4.1.tar.gz" afterDir="false" />
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Removing files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/crazydiskmark" beforeDir="false" afterPath="$PROJECT_DIR$/bin/crazydiskmark" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark.egg-info/requires.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debian/copyright" beforeDir="false" afterPath="$PROJECT_DIR$/debian/copyright" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,7 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599093706333</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Removing desktop file no more necessary :rocket:">
+      <created>1599094152677</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599094152677</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Removing files">
+      <created>1599094224026</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599094224026</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,37 +232,39 @@
     <MESSAGE value="Release 0.3.6 out now :rocket:" />
     <MESSAGE value="Delete dist build and egg directories :rocket: :space_invader:" />
     <MESSAGE value="Preparing to docker :rocket: :bug: :small_airplane: :airplane: :airplane:" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparing to docker :rocket: :bug: :small_airplane: :airplane: :airplane:" />
+    <MESSAGE value="Removing desktop file no more necessary :rocket:" />
+    <MESSAGE value="Removing files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599006041990">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1599006041990" />
-    <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599093914505">
+    <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599094093069">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599093914505" />
-    <state width="2065" height="275" key="GridCell.Tab.0.center" timestamp="1599093914505">
+    <state width="2065" height="275" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599094093069" />
+    <state width="2065" height="275" key="GridCell.Tab.0.center" timestamp="1599094093068">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599093914505" />
-    <state width="2065" height="275" key="GridCell.Tab.0.left" timestamp="1599093914504">
+    <state width="2065" height="275" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599094093068" />
+    <state width="2065" height="275" key="GridCell.Tab.0.left" timestamp="1599094093068">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599093914504" />
-    <state width="2065" height="275" key="GridCell.Tab.0.right" timestamp="1599093914505">
+    <state width="2065" height="275" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599094093068" />
+    <state width="2065" height="275" key="GridCell.Tab.0.right" timestamp="1599094093069">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599093914505" />
+    <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599094093069" />
     <state x="529" y="155" key="SettingsEditor" timestamp="1598741842764">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599093709838">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599094232857">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599093709838" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599094232857" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
