@@ -95,6 +95,8 @@ os.system('makepkg --printsrcinfo > .SRCINFO')
 
 os.system('git add PKGBUILD .SRCINFO')
 
+if os.path.isfile(f'crazydiskmark-${version}.tar.gz'):
+    os.system(f'rm -rfv crazydiskmark-${version}.tar.gz')
 
 if os.path.isdir('src/'):
     os.system('git rm -r -f src/')

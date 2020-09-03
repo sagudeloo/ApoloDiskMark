@@ -19,103 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="change bug in Icon file">
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/crazydiskmark-0.4.4-1-any.pkg.tar.zst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/crazydiskmark-0.4.4.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/.BUILDINFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/.MTREE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/.PKGINFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/bin/crazydiskmark" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark-0.4.4-py3.8.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark-0.4.4-py3.8.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark-0.4.4-py3.8.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark-0.4.4-py3.8.egg-info/not-zip-safe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark-0.4.4-py3.8.egg-info/requires.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark-0.4.4-py3.8.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/aboutdialog.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/crazydiskmark.desktop" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/crazydiskmark.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/images/directoryicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/images/icon.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/images/logo.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/images/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/images/shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/images/starticon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/mainwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/scripts/rnd4kq1t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/scripts/rnd4kq1t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/scripts/rnd4kq32t16read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/scripts/rnd4kq32t16write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/scripts/seq1mq1t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/scripts/seq1mq1t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/scripts/seq1mq8t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/lib/python3.8/site-packages/crazydiskmark/scripts/seq1mq8t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/pkg/crazydiskmark/usr/share/applications/crazydiskmark.desktop" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/MANIFEST.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/bin/crazydiskmark" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/aboutdialog.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/crazydiskmark.desktop" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/crazydiskmark.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/images/directoryicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/images/icon.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/images/logo.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/images/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/images/shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/images/starticon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/mainwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/scripts/rnd4kq1t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/scripts/rnd4kq1t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/scripts/rnd4kq32t16read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/scripts/rnd4kq32t16write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/scripts/seq1mq1t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/scripts/seq1mq1t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/scripts/seq1mq8t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/lib/crazydiskmark/scripts/seq1mq8t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/build/scripts-3.8/crazydiskmark" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark.egg-info/not-zip-safe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark.egg-info/requires.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/aboutdialog.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/crazydiskmark.desktop" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/crazydiskmark.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/images/directoryicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/images/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/images/icon.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/images/logo.xcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/images/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/images/shot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/images/starticon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/mainwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/scripts/rnd4kq1t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/scripts/rnd4kq1t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/scripts/rnd4kq32t16read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/scripts/rnd4kq32t16write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/scripts/seq1mq1t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/scripts/seq1mq1t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/scripts/seq1mq8t1read.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/crazydiskmark/scripts/seq1mq8t1write.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/setup.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crazydiskmark-aur/src/crazydiskmark-0.4.4/setup.py" afterDir="false" />
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Change icon name and store now in /usr/share/icons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark-aur" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark-aur" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/crazydiskmark.desktop" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/crazydiskmark.desktop" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/images/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/images/crazydiskmark_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submitAUR.py" beforeDir="false" afterPath="$PROJECT_DIR$/submitAUR.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599099077505</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Change icon name and store now in /usr/share/icons">
+      <created>1599099708248</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599099708248</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,7 +274,8 @@
     <MESSAGE value="Release 0.4.2 out now :space_invader: :space_invader: :sa: :airplane: :atm:" />
     <MESSAGE value="prepare to release 0.4.3" />
     <MESSAGE value="change bug in Icon file" />
-    <option name="LAST_COMMIT_MESSAGE" value="change bug in Icon file" />
+    <MESSAGE value="Change icon name and store now in /usr/share/icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change icon name and store now in /usr/share/icons" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599006041990">
@@ -387,10 +302,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599099080912">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599099761533">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599099080912" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599099761533" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
