@@ -1,4 +1,6 @@
 #!/bin/bash
 
 
+curl https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/crazydiskmark_icon.png --output /usr/share/icons/hicolor/48x48/apps/crazydiskmark_icon.png
 
+curl https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/crazydiskmark.desktop --output /usr/share/applications/crazydiskmark.desktop

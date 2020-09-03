@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+rm /usr/share/icons/hicolor/48x48/apps/crazydiskmark_icon.png
+rm /usr/share/applications/crazydiskmark.desktop
