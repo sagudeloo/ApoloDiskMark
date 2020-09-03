@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="mod binary script">
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Prepare to release 0.4.9 :arrow_right: :rocket: :rocket: 🦖:airplane:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/crazydiskmark" beforeDir="false" afterPath="$PROJECT_DIR$/bin/crazydiskmark" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599172071144</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Prepare to release 0.4.9 :arrow_right: :rocket: :rocket: 🦖:airplane:">
+      <created>1599172109080</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1599172109080</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -372,7 +379,8 @@
     <MESSAGE value="Add ignore file to deb package" />
     <MESSAGE value="Debian package is ok. " />
     <MESSAGE value="mod binary script" />
-    <option name="LAST_COMMIT_MESSAGE" value="mod binary script" />
+    <MESSAGE value="Prepare to release 0.4.9 :arrow_right: :rocket: :rocket: :airplane:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare to release 0.4.9 :arrow_right: :rocket: :rocket: :airplane:" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599154783757">
@@ -395,14 +403,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599105576881" />
+    <state x="9" y="86" width="2048" height="859" key="MergeDialog" timestamp="1599172141397">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="9" y="86" width="2048" height="859" key="MergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1599172141397" />
+    <state x="680" y="283" width="715" height="468" key="MultipleFileMergeDialog" timestamp="1599172141404">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="680" y="283" width="715" height="468" key="MultipleFileMergeDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1599172141404" />
     <state x="529" y="155" key="SettingsEditor" timestamp="1598741842764">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599171854642">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599172111616">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599171854642" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599172111616" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
