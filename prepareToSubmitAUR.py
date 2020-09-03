@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 coloredlogs.install()
 
 logger.info('Preparing to submit AUR Package...')
-os.chdir('crazydiskmark-aur/')
+os.chdir('aur/')
 
 logger.info('Get current version...')
 # update aboutdialog.ui with correct version
