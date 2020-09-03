@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Debian package is ok. 🚀🇷🇴🇷🇴🚀🚀🚀">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/crazydiskmark" beforeDir="false" afterPath="$PROJECT_DIR$/bin/crazydiskmark" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599157423506</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Debian package is ok. 🚀🇷🇴🇷🇴🚀🚀🚀">
+      <created>1599161577198</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1599161577198</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -383,18 +391,18 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599157427753">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599161581533">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599157427753" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599161581533" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1598839620997" />
-    <state x="837" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599005748914">
+    <state x="837" y="435" width="373" height="163" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599165705422">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="837" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599005748914" />
+    <state x="837" y="435" width="373" height="163" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599165705422" />
     <state x="702" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1598840346796">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
