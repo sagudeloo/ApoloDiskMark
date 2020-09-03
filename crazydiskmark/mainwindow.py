@@ -6,7 +6,6 @@ import humanfriendly
 import shutil
 from pathlib import Path
 from PyQt5 import QtWidgets, uic, QtCore, QtGui
-import desktop_file
 import logging
 
 resource_path = os.path.dirname(__file__)
@@ -153,25 +152,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.clearResults()
         # show window
         self.show()
-        # binaryFile = shutil.which('crazydiskmark')
-        binaryDir = f'/usr/bin'
-        desktopDir = f'{Path.home()}/.local/share/applications'
-        if os.path.exists(f'{desktopDir}/crazydiskmark.desktop'):
-            self.logger.info('Desktop entry exists [bypass]')
-        else:
-            self.logger.info('Desktop entry not exists [creating]')
-            self.logger.info(f'desktop Dir: {desktopDir}')
-            if not os.path.isdir(desktopDir):
-                os.makedirs(desktopDir)
-
-            shortcut = desktop_file.Shortcut(desktopDir, "crazydiskmark", f'{binaryDir}/crazydiskmark')
-            shortcut.setTitle('Crazy DiskMark')
-            shortcut.setWorkingDirectory(f'{binaryDir}')
-            shortcut.setComment(
-                'Crazy DiskMark is a utility to benchmark SSD disks on linux and produce results like CrystalDiskMark')
-            shortcut.setIcon(f'{resource_path}/images/icon.png')
-            shortcut.setCategories('System;')
-            shortcut.save()
 
     def receiveThreadfinish(self, val):
         self.logger.info('Receiving signal ok ', val)
