@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Adjust the submit rules to AUR 🚀:space_invader: 🇪🇸🇪🇸🇪🇸:space_invader:">
+      <change afterPath="$PROJECT_DIR$/debian/source/options" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debian/changelog" beforeDir="false" afterPath="$PROJECT_DIR$/debian/changelog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debian/files" beforeDir="false" afterPath="$PROJECT_DIR$/debian/files" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,10 +347,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Adjust the submit rules to AUR :space_invader: :space_invader:" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599152327384">
+    <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599154783757">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1599152327384" />
+    <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1599154783757" />
     <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599105576881">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
