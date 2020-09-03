@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Release 0.4.7 out now. 🚀🚀🚀🚀🚀🚀">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crazydiskmark-aur" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark-aur" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submitAUR.py" beforeDir="false" afterPath="$PROJECT_DIR$/prepareToSubmitAUR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/submitLaunchpad.sh" beforeDir="false" afterPath="$PROJECT_DIR$/prepareToSubmitLaunchpad.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599152369745</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Release 0.4.7 out now. 🚀🚀🚀🚀🚀🚀">
+      <created>1599152539527</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1599152539527</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,10 +355,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1598741842764" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599152375755">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599152543775">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599152375755" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599152543775" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

@@ -102,11 +102,3 @@ if os.path.isdir('pkg/'):
 
 logger.info('Printing .SRCINFO...')
 os.system('makepkg --printsrcinfo > .SRCINFO')
-logger.info('add files PKGBUILD and .SRCINFO to repository...')
-os.system('git add PKGBUILD .SRCINFO')
-logger.info('commit changes....')
-os.system(f'git commit -m "update to release {version}"')
-logger.info('git pushing....')
-os.system('git push')
-
-os.system('cd ../')
