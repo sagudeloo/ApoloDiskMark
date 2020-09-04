@@ -19,14 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="prepare to release 0.5.0 :rocket:">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debian/changelog" beforeDir="false" afterPath="$PROJECT_DIR$/debian/changelog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debian/control" beforeDir="false" afterPath="$PROJECT_DIR$/debian/control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debian/files" beforeDir="false" afterPath="$PROJECT_DIR$/debian/files" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debian/postinst" beforeDir="false" afterPath="$PROJECT_DIR$/debian/postinst" afterDir="false" />
-    </list>
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="change curl to silent in debian package ... No problem with curl :rocket: :frog: :frog:" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -391,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599191132074</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="change curl to silent in debian package ... No problem with curl :rocket: :frog: :frog:">
+      <created>1599192155079</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1599192155080</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -411,7 +411,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/crazydiskmark-aur" />
     </ignored-roots>
-    <MESSAGE value="No snap, no more snaps." />
     <MESSAGE value="Prepare to release 0.3.6" />
     <MESSAGE value="Release 0.3.6 out now :rocket:" />
     <MESSAGE value="Delete dist build and egg directories :rocket: :space_invader:" />
@@ -436,7 +435,8 @@
     <MESSAGE value="update changelog in fedora spec file :rocket: :rocket: :frog: :frog: :frog:" />
     <MESSAGE value="Added curl -s to spec file :crab: :crab:" />
     <MESSAGE value="prepare to release 0.5.0 :rocket:" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare to release 0.5.0 :rocket:" />
+    <MESSAGE value="change curl to silent in debian package ... No problem with curl :rocket: :frog: :frog:" />
+    <option name="LAST_COMMIT_MESSAGE" value="change curl to silent in debian package ... No problem with curl :rocket: :frog: :frog:" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599154783757">
@@ -471,10 +471,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1599192047908" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599191135174">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599192158828">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599191135174" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599192158828" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

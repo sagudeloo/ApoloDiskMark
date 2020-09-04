@@ -1,14 +1,14 @@
 %global pypi_name crazydiskmark
 %global debug_package %{nil}
 Name:           python-%{pypi_name}
-Version:        0.4.9
+Version:        0.5.0
 Release:        1%{?dist}
 Summary:        Linux disk benchmark tool like CrystalDiskMark
 
 License:        MIT
 URL:            https://github.com/fredcox/crazydiskmark
 Source0:        %{pypi_source}
-BuildArch:      x86_64
+BuildArch:      noarch
 
 BuildRequires:  python3-devel
 BuildRequires:  desktop-file-utils
@@ -40,14 +40,10 @@ rm -rf %{pypi_name}.egg-info
 
 %install
 %py3_install
-# Prepare to download and install desktop file
-mkdir -p %{buildroot}/%{_datadir}/applications
-curl -s https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/crazydiskmark.desktop \
-  --output %{buildroot}/%{_datadir}/applications/crazydiskmark.desktop
-# Prepare to download and install icon file
-mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/48x48/apps
-curl -s https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/crazydiskmark_icon.png \
-  --output %{buildroot}/%{_datadir}/icons/hicolor/48x48/apps/crazydiskmark_icon.png
+ls -lh $RPM_BUILD_DIR/%{pypi_name}-%{version} 
+desktop-file-install                                    \
+  --dir=%{buildroot}%{_datadir}/applications              \
+  $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}/%{pypi_name}.desktop
 
 
 %files -n python3-%{pypi_name}
@@ -55,11 +51,9 @@ curl -s https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydisk
 %{_bindir}/crazydiskmark
 %{python3_sitelib}/%{pypi_name}
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
-%{_datadir}/icons/hicolor/48x48/apps/crazydiskmark_icon.png
-%{_datadir}/applications/crazydiskmark.desktop
-
+%{_datadir}/applications/%{pypi_name}.desktop
 
 %changelog
 * Fri Sep 4 2020 Fred Lins <fredcox@gmail.com>
-- 0.4-9
+- 0.5-0
 - First release for Fedora
