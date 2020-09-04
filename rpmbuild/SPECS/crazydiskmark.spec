@@ -2,7 +2,7 @@
 %global pypi_name crazydiskmark
 %global debug_package %{nil}
 Name:           python-%{pypi_name}
-Version:        0.4.8
+Version:        0.4.9
 Release:        1%{?dist}
 Summary:        Linux disk benchmark tool like CrystalDiskMark
 
@@ -49,5 +49,5 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
 
 %changelog
-* Thu Sep 03 2020 Fred Lins - 0.4.8-1
+* Thu Sep 03 2020 Fred Lins - 0.4.9-1
 - Initial package.
