@@ -14,5 +14,5 @@ if len(sys.argv) == 1:
     sys.exit(0)
 
 version = sys.argv[1]
-cmd = f'copr-cli build crazydiskmark rpmbuild/crazydiskmark-{version}.fc32.src.rpm'
+cmd = f'copr-cli build crazydiskmark /root/rpmbuild/SRPMS/crazydiskmark-{version}-1.fc32.src.rpm'
 os.system(cmd)
