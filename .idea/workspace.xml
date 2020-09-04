@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Releasing 0.4.9 in launchpad :rocket: :rocket: :rocket: :rocket:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debian/control" beforeDir="false" afterPath="$PROJECT_DIR$/debian/control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpmbuild/SPECS/crazydiskmark.spec" beforeDir="false" afterPath="$PROJECT_DIR$/rpmbuild/SPECS/crazydiskmark.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepareToSubmitLaunchpad.sh" beforeDir="false" afterPath="$PROJECT_DIR$/prepareToSubmitLaunchpad.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpmbuild/crazydiskmark.spec" beforeDir="false" afterPath="$PROJECT_DIR$/rpmbuild/crazydiskmark.spec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -452,10 +452,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1598839620997" />
-    <state x="837" y="435" width="373" height="163" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599171826725">
+    <state x="837" y="435" width="383" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599178173417">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="837" y="435" width="373" height="163" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599171826725" />
+    <state x="837" y="435" width="383" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599178173417" />
     <state x="702" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1598840346796">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

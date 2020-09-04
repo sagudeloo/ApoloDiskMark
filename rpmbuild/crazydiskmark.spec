@@ -60,5 +60,6 @@ curl https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmar
 
 
 %changelog
-* Thu Sep 03 2020 Fred Lins - 0.4.9-1
-- Release 0.4.9.
+* Fri Sep 4 2020 Fred Lins <fredcox@gmail.com>
+- 0.4-9
+- First release for Fedora
