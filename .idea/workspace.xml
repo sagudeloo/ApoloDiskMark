@@ -20,14 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="update benchmark tests to more fast response.">
-      <change afterPath="$PROJECT_DIR$/addAndCommit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/fredlins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/fredlins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/crazydiskmark.ui" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/crazydiskmark.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/images/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/images/screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/scripts/rnd4kq32t16read.sh" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/scripts/rnd4kq32t1read.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/scripts/rnd4kq32t16write.sh" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/scripts/rnd4kq32t1write.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addAndCommit.py" beforeDir="false" afterPath="$PROJECT_DIR$/addAndCommit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
