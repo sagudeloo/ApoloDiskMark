@@ -1,0 +1,53 @@
+Crazy DiskMark
+
+[Crazy DiskMark - Logo]
+
+-   About
+-   Dependencies
+-   Install
+-   Buy me a Coffee
+-   License
+
+Please, this program is made to run in SSD´s only. Don´t try to run this app in mechanical disks. Thank you.
+
+About
+
+Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
+results like CrystalDiskMark.
+
+Dependencies
+
+1.  Python version 3.8 or later
+2.  fio (Flexible I/O Tester) version 3.16 or later
+
+if you want know about fio version in your system:
+
+    $ fio --version
+    fio-3.16
+
+Ubuntu, Debian and derivatives (Linux Mint, MX Linux)
+
+    $ sudo apt update
+    $ sudo apt install fio python3-pip
+
+Install
+
+    $ pip3 install crazydiskmark
+    $ crazydiskmark
+
+Please, remember: HOME/.local/bin *  * musttobeincludedinyour * *PATH
+variable!
+
+Edit your $HOME/.bashrc and put the following line on the end off file:
+
+export PATH=$PATH:~/.local/bin
+
+Screenshot
+
+[Screenshot]
+
+Buy me a Coffee
+
+License
+
+This project use MIT License
