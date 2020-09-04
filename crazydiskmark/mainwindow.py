@@ -131,6 +131,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.startPushButton.clicked.connect(self.startBenchMark)
         # Configura e conecta a thread
         #  self.thread.setPriority(QtCore.QThread.HighestPriority)
+        self.thread.setTerminationEnabled()
         self.thread.signal.connect(self.receiveThreadfinish)
 
         self.aboutDialog = QtWidgets.QDialog()
