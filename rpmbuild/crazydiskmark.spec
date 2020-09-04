@@ -9,7 +9,7 @@ URL:            https://github.com/fredcox/crazydiskmark
 Source0:        %{pypi_source}
 BuildArch:      noarch
 BuildRequires:  python3-devel,desktop-file-utils,python3-setuptools
-Requires:       python3-coloredlogs, python3-humanfriendly,python3i-pyqt5,fio
+Requires:       python3-coloredlogs, python3-humanfriendly,python3-pyqt5,fio
 
 %description
  Crazy DiskMark is a utility to benchmark SSD disks on linux and 
