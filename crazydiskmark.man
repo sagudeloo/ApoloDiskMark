@@ -11,10 +11,5 @@ Crazy DiskMark - benchmark SSD disks on linux
 .SH ERRORS
 Errors must be reported in github : (https://github.com/fredcox/crazydiskmark).
 
-.SH SEE ALSO
-.B rice(1)
-.B bean(1)
-.B milk(1)
-
 .SH AUTHOR
 Fred Lins  (https://fredcox.github.io)
