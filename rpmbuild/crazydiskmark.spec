@@ -1,6 +1,6 @@
 %global pypi_name crazydiskmark
 %global debug_package %{nil}
-Name:           python-%{pypi_name}
+Name:           %{pypi_name}-src
 Version:        0.5.4
 Release:        1%{?dist}
 Summary:        Linux disk benchmark tool like CrystalDiskMark
@@ -18,15 +18,14 @@ BuildRequires:  python3dist(setuptools)
   Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
 results like CrystalDiskMark.
 
-%package -n     python3-%{pypi_name}
+%package -n     %{pypi_name}
 Summary:        %{summary}
-%{?python_provide:%python_provide python3-%{pypi_name}}
 
 Requires:       python3dist(coloredlogs)
 Requires:       python3dist(humanfriendly)
 Requires:       python3dist(pyqt5)
 Requires:       fio
-%description -n python3-%{pypi_name}
+%description -n %{pypi_name}
   Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
 results like CrystalDiskMark.
 
@@ -57,7 +56,7 @@ install -m0644 $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}.1.gz \
 
 
 
-%files -n python3-%{pypi_name}
+%files -n %{pypi_name}
 %doc README.me
 %{_bindir}/crazydiskmark
 %{python3_sitelib}/%{pypi_name}
