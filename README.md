@@ -1,5 +1,13 @@
 # Crazy DiskMark
 
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/fredcox/crazydiskmark/package/crazydiskmark/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/fredcox/crazydiskmark/package/crazydiskmark/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![GitHub version](https://badge.fury.io/gh/fredcox%2Fcrazydiskmark.svg)](https://badge.fury.io/gh/fredcox%2Fcrazydiskmark)
+[![GitHub forks](https://img.shields.io/github/forks/fredcox/crazydiskmark)](https://github.com/fredcox/crazydiskmark/network)
+[![GitHub stars](https://img.shields.io/github/stars/fredcox/crazydiskmark)](https://github.com/fredcox/crazydiskmark/stargazers)
+[![GitHub license](https://img.shields.io/github/license/fredcox/crazydiskmark)](https://github.com/fredcox/crazydiskmark/blob/master/LICENSE)
+
+
 ![Crazy DiskMark - Logo](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png)
 
 * [About](#about)
