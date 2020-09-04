@@ -3,7 +3,6 @@
 ![Crazy DiskMark - Logo](https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/logo.png)
 
 * [About](#about)
-* [Dependencies](#dependencies)
 * [Install](#install)
 * [Buy me a Coffee](#buy-me-a-coffee)
 * [License](#license)
@@ -14,38 +13,30 @@
 
 ***Crazy DiskMark*** is a utility to benchmark ***SSD*** disks on linux and produce results like ***CrystalDiskMark***.
 
-## Dependencies
-
-1. Python version 3.8 or later
-2. fio ***(Flexible I/O Tester)*** version 3.16 or later
-
-if you want know about fio version in your system:
-
-```bash
-$ fio --version
-fio-3.16
-``` 
+## Install
 
 ### Ubuntu, Debian and derivatives (Linux Mint, MX Linux)
 
 ```bash
+$ sudo add-apt-repository ppa:fredcox-p/crazydiskmark
 $ sudo apt update
-$ sudo apt install fio python3-pip
+$ sudo apt install crazydiskmark
 ```
 
-## Install
+### Arch Linux and derivatives (Manjaro)
 
 ```bash
-$ pip3 install crazydiskmark
+$ yay -S crazydiskmark
 $ crazydiskmark
 ```
 
-Please, remember: **$HOME/.local/bin** must to be included in your **$PATH** variable!
+### Fedora32
 
-Edit your $HOME/.bashrc and put the following line on the end off file:
-
-`export PATH=$PATH:~/.local/bin`
-
+```bash
+$ sudo dnf copr enable fredcox/crazydiskmark
+$ sudo dnf update
+$ sudo dnf install crazydiskmark
+```
 
 ## Screenshot
 
