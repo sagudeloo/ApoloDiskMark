@@ -3,7 +3,6 @@ Crazy DiskMark
 [Crazy DiskMark - Logo]
 
 -   About
--   Dependencies
 -   Install
 -   Buy me a Coffee
 -   License
@@ -15,32 +14,24 @@ About
 Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
 results like CrystalDiskMark.
 
-Dependencies
-
-1.  Python version 3.8 or later
-2.  fio (Flexible I/O Tester) version 3.16 or later
-
-if you want know about fio version in your system:
-
-    $ fio --version
-    fio-3.16
+Install
 
 Ubuntu, Debian and derivatives (Linux Mint, MX Linux)
 
+    $ sudo add-apt-repository ppa:fredcox-p/crazydiskmark
     $ sudo apt update
-    $ sudo apt install fio python3-pip
+    $ sudo apt install crazydiskmark
 
-Install
+Arch Linux and derivatives (Manjaro)
 
-    $ pip3 install crazydiskmark
+    $ yay -S crazydiskmark
     $ crazydiskmark
 
-Please, remember: HOME/.local/bin *  * musttobeincludedinyour * *PATH
-variable!
+Fedora32
 
-Edit your $HOME/.bashrc and put the following line on the end off file:
-
-export PATH=$PATH:~/.local/bin
+    $ sudo dnf copr enable fredcox/crazydiskmark
+    $ sudo dnf update
+    $ sudo dnf install crazydiskmark
 
 Screenshot
 
