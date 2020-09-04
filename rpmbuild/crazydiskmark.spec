@@ -1,4 +1,3 @@
-# Created by pyp2rpm-3.3.4
 %global pypi_name crazydiskmark
 %global debug_package %{nil}
 Name:           python-%{pypi_name}
@@ -11,7 +10,8 @@ URL:            https://github.com/fredcox/crazydiskmark
 Source0:        %{pypi_source}
 BuildArch:      x86_64
 
-BuildRequires:  python3-devel,desktop-file-utils
+BuildRequires:  python3-devel
+BuildRequires:  desktop-file-utils
 BuildRequires:  python3dist(setuptools)
 
 %description
@@ -33,7 +33,6 @@ results like CrystalDiskMark.
 
 %prep
 %autosetup -n %{pypi_name}-%{version}
-# Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
 %build
@@ -41,13 +40,25 @@ rm -rf %{pypi_name}.egg-info
 
 %install
 %py3_install
+# Prepare to download and install desktop file
+mkdir -p %{buildroot}/%{_datadir}/applications
+curl https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/crazydiskmark.desktop \
+  --output %{buildroot}/%{_datadir}/applications/crazydiskmark.desktop
+# Prepare to download and install icon file
+mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/48x48/apps
+curl https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/crazydiskmark_icon.png \
+  --output %{buildroot}/%{_datadir}/icons/hicolor/48x48/apps/crazydiskmark_icon.png
+
 
 %files -n python3-%{pypi_name}
 %doc README.md
 %{_bindir}/crazydiskmark
 %{python3_sitelib}/%{pypi_name}
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
+%{_datadir}/icons/hicolor/48x48/apps/crazydiskmark_icon.png
+%{_datadir}/applications/crazydiskmark.desktop
+
 
 %changelog
 * Thu Sep 03 2020 Fred Lins - 0.4.9-1
-- Initial package.
+- Release 0.4.9.
