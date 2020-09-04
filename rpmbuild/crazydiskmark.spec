@@ -62,6 +62,6 @@ install -m0644 $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}.1.gz \
 %{_mandir}/man1/crazydiskmark.1.gz
 
 %changelog
-* Fri Sep 0.5.7 Fred Lins <fredcox@gmail.com>
+* Fri Sep 4 2020 Fred Lins <fredcox@gmail.com>
 - 0.5.7-1
 - First release for Fedora
