@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rpmbuild -ba rpmbuild/crazydiskmark.spec
+rpmbuild -ba --sign rpmbuild/crazydiskmark.spec
