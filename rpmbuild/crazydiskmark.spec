@@ -50,7 +50,7 @@ install $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}/images/%{pypi_name}_
   %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{pypi_name}_icon.png
 # install manual
 mkdir -p %{buildroot}%{_datadir}/man/man1/
-install $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}.1 \
+install $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}.1.gz \
   %{buildroot}%{_datadir}/man/man1/%{pypi_name}.1.gz
 
 
