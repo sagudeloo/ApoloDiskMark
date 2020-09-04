@@ -2,7 +2,7 @@
 # Maintainer: Fred Lins <fredcox at gmail dot com>
 # install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 pkgname=crazydiskmark
-pkgver=0.5.5
+pkgver=0.5.6
 pkgrel=1
 pkgdesc='Linux disk benchmark tool like CrystalDiskMark'
 arch=('any')

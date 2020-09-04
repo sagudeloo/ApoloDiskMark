@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Prepare to release 0.5.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aur/.SRCINFO" beforeDir="false" afterPath="$PROJECT_DIR$/aur/.SRCINFO" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aur/PKGBUILD" beforeDir="false" afterPath="$PROJECT_DIR$/aur/PKGBUILD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crazydiskmark.1.gz" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark.1.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/aboutdialog.ui" afterDir="false" />
