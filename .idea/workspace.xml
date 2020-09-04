@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Prepare to release 0.5.3">
-      <change afterPath="$PROJECT_DIR$/crazydiskmark.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/publish.sh" beforeDir="false" afterPath="$PROJECT_DIR$/publish.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-crazydiskmark-0.5.4-1.fc32.src.rpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python3-crazydiskmark-0.5.4-1.fc32.noarch.rpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
