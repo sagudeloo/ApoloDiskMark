@@ -6,7 +6,7 @@ Version:        0.4.8
 Release:        1%{?dist}
 Summary:        Linux disk benchmark tool like CrystalDiskMark
 
-License:        None
+License:        MIT
 URL:            https://github.com/fredcox/crazydiskmark
 Source0:        %{pypi_source}
 BuildArch:      noarch
@@ -15,12 +15,8 @@ BuildRequires:  python3-devel
 BuildRequires:  python3dist(setuptools)
 
 %description
- Crazy DiskMark![Crazy DiskMark - Logo]( [About](about) *
-[Dependencies](dependencies) * [Install](install) * [Buy me a Coffee](buy-me-a-
-coffee) * [License](license) Please, this program is made to run in SSD´s only.
-Don´t try to run this app in mechanical disks. Thank you. About***Crazy
-DiskMark*** is a utility to benchmark ***SSD*** disks on linux and produce
-results like...
+  Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
+  results like CrystalDiskMark.
 
 %package -n     python3-%{pypi_name}
 Summary:        %{summary}
@@ -30,12 +26,8 @@ Requires:       python3dist(coloredlogs)
 Requires:       python3dist(humanfriendly)
 Requires:       python3dist(pyqt5)
 %description -n python3-%{pypi_name}
- Crazy DiskMark![Crazy DiskMark - Logo]( [About](about) *
-[Dependencies](dependencies) * [Install](install) * [Buy me a Coffee](buy-me-a-
-coffee) * [License](license) Please, this program is made to run in SSD´s only.
-Don´t try to run this app in mechanical disks. Thank you. About***Crazy
-DiskMark*** is a utility to benchmark ***SSD*** disks on linux and produce
-results like...
+  Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
+  results like CrystalDiskMark.
 
 
 %prep
@@ -54,6 +46,8 @@ rm -rf %{pypi_name}.egg-info
 %{_bindir}/crazydiskmark
 %{python3_sitelib}/%{pypi_name}
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
+%{_datadir}/applications/%{pypi_name}.desktop
+%{_datadir}/icons/hicolor/48x48/apps/%{pypi_name}_icon.png
 
 %changelog
 * Thu Sep 03 2020 Fred Lins - 0.4.8-1
