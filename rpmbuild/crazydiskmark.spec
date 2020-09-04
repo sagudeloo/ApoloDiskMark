@@ -8,12 +8,15 @@ License:        MIT
 URL:            https://github.com/fredcox/crazydiskmark
 Source0:        %{pypi_source}
 BuildArch:      noarch
+
 BuildRequires:  python3-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  python3-setuptools
+
 Requires:       python3-coloredlogs
 Requires:       python3-humanfriendly
-Requires:       python3-pyqt5
+Requires:       python3-pyqt5-sip
+Requires:       python3-qt5-base
 Requires:       fio
 
 %description
