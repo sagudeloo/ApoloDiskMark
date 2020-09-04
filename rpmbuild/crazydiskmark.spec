@@ -42,11 +42,11 @@ rm -rf %{pypi_name}.egg-info
 %py3_install
 # Prepare to download and install desktop file
 mkdir -p %{buildroot}/%{_datadir}/applications
-curl https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/crazydiskmark.desktop \
+curl -s https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/crazydiskmark.desktop \
   --output %{buildroot}/%{_datadir}/applications/crazydiskmark.desktop
 # Prepare to download and install icon file
 mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/48x48/apps
-curl https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/crazydiskmark_icon.png \
+curl -s https://raw.githubusercontent.com/fredcox/crazydiskmark/master/crazydiskmark/images/crazydiskmark_icon.png \
   --output %{buildroot}/%{_datadir}/icons/hicolor/48x48/apps/crazydiskmark_icon.png
 
 
