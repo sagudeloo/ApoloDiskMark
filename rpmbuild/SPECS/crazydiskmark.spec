@@ -1,6 +1,6 @@
 # Created by pyp2rpm-3.3.4
 %global pypi_name crazydiskmark
-
+%global debug_package %{nil}
 Name:           python-%{pypi_name}
 Version:        0.4.8
 Release:        1%{?dist}
@@ -16,7 +16,7 @@ BuildRequires:  python3dist(setuptools)
 
 %description
   Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
-  results like CrystalDiskMark.
+results like CrystalDiskMark.
 
 %package -n     python3-%{pypi_name}
 Summary:        %{summary}
@@ -28,7 +28,7 @@ Requires:       python3dist(pyqt5)
 Requires:       fio
 %description -n python3-%{pypi_name}
   Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
-  results like CrystalDiskMark.
+results like CrystalDiskMark.
 
 
 %prep
@@ -47,7 +47,6 @@ rm -rf %{pypi_name}.egg-info
 %{_bindir}/crazydiskmark
 %{python3_sitelib}/%{pypi_name}
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
-
 
 %changelog
 * Thu Sep 03 2020 Fred Lins - 0.4.8-1
