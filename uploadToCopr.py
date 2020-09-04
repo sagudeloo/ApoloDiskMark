@@ -2,6 +2,7 @@
 import coloredlogs
 import logging
 import sys
+import os
 
 # Create a logger object.
 # shellcheck disable=SC2034
@@ -14,3 +15,4 @@ if len(sys.argv) == 1:
 
 version = sys.argv[1]
 cmd = f'copr-cli build crazydiskmark rpmbuild/crazydiskmark-{version}.fc32.src.rpm'
+os.system(cmd)
