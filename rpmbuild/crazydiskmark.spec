@@ -1,7 +1,7 @@
 %global pypi_name crazydiskmark
 %global debug_package %{nil}
 Name:           python-%{pypi_name}
-Version:        0.5.0
+Version:        0.5.2
 Release:        1%{?dist}
 Summary:        Linux disk benchmark tool like CrystalDiskMark
 
@@ -48,8 +48,6 @@ desktop-file-install                                    \
 mkdir -p %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/
 install $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}/images/%{pypi_name}_icon.png \
   %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{pypi_name}_icon.png
-ls -lh %doc
-
 
 
 
@@ -63,5 +61,5 @@ ls -lh %doc
 
 %changelog
 * Fri Sep 4 2020 Fred Lins <fredcox@gmail.com>
-- 0.5-0
+- 0.5-2
 - First release for Fedora
