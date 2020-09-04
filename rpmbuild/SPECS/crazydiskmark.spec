@@ -11,7 +11,7 @@ URL:            https://github.com/fredcox/crazydiskmark
 Source0:        %{pypi_source}
 BuildArch:      x86_64
 
-BuildRequires:  python3-devel
+BuildRequires:  python3-devel,desktop-file-utils
 BuildRequires:  python3dist(setuptools)
 
 %description
