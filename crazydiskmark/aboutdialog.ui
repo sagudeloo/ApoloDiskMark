@@ -60,7 +60,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>0.5.4</string>
+       <string>0.5.5</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
