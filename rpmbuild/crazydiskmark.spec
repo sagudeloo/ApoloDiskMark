@@ -8,8 +8,16 @@ License:        MIT
 URL:            https://github.com/fredcox/crazydiskmark
 Source0:        %{pypi_source}
 BuildArch:      noarch
-BuildRequires:  python3-devel,desktop-file-utils,python3-setuptools
-Requires:       python3-coloredlogs, python3-humanfriendly,python3-pyqt5,fio
+
+BuildRequires:  python3-devel
+BuildRequires:  desktop-file-utils
+BuildRequires:  python3-setuptools
+
+Requires:       python3-coloredlogs
+Requires:       python3-humanfriendly
+Requires:       python3-pyqt5-sip
+Requires:       python3-qt5-base
+Requires:       fio
 
 %description
  Crazy DiskMark is a utility to benchmark SSD disks on linux and 
@@ -45,6 +53,7 @@ install -m0644 $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}.1.gz \
 
 %files -n %{pypi_name}
 %doc README.me
+%license LICENSE
 %{_bindir}/crazydiskmark
 %{python3_sitelib}/%{pypi_name}
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
