@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Prepare to release 0.5.3">
-      <change afterPath="$PROJECT_DIR$/python-crazydiskmark-0.5.3-1.fc32.src.rpm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crazydiskmark.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish.sh" beforeDir="false" afterPath="$PROJECT_DIR$/publish.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -533,9 +532,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="702" y="229" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040@0.0.2560.1040" timestamp="1598840346796" />
-    <state x="768" y="433" width="540" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1599152294584">
+    <state x="768" y="433" width="540" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1599232217641">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="768" y="433" width="540" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1599152294584" />
+    <state x="768" y="433" width="540" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1599232217641" />
   </component>
 </project>
