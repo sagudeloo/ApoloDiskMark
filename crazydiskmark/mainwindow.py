@@ -33,11 +33,11 @@ class ThreadClass(QtCore.QThread):
             "suffix": "write"
         },
         {
-            "prefix": "rnd4kq32t16",
+            "prefix": "rnd4kq32t1",
             "suffix": "read"
         },
         {
-            "prefix": "rnd4kq32t16",
+            "prefix": "rnd4kq32t1",
             "suffix": "write"
         },
         {
@@ -79,7 +79,7 @@ class ThreadClass(QtCore.QThread):
         cmd: str = '{}/scripts/{}{}.sh {}'.format(resource_path, self.operations[self.operationIndex]['prefix'],
                                                   self.operations[self.operationIndex]['suffix'], self.directory)
         self.logger.info(f'Running [{cmd}]')
-        bw_bytes = ''
+
         output = json.loads(subprocess.getoutput(cmd).encode('utf-8'))
 
         if self.isEven(self.operationIndex):
@@ -118,8 +118,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'seq1mq8t1WriteLabel'))
         self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'seq1mq1t1ReadLabel'))
         self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'seq1mq1t1WriteLabel'))
-        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq32t16ReadLabel'))
-        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq32t16WriteLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq32t1ReadLabel'))
+        self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq32t1WriteLabel'))
         self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq1t1ReadLabel'))
         self.labelWidgets.append(self.findChild(QtWidgets.QLabel, 'rnd4kq1t1WriteLabel'))
         for label in self.labelWidgets:
@@ -189,8 +189,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.seq1mq8t1WriteLabel.setText('')
         self.seq1mq1t1ReadLabel.setText('')
         self.seq1mq1t1WriteLabel.setText('')
-        self.rnd4kq32t16ReadLabel.setText('')
-        self.rnd4kq32t16WriteLabel.setText('')
+        self.rnd4kq32t1ReadLabel.setText('')
+        self.rnd4kq32t1WriteLabel.setText('')
         self.rnd4kq1t1ReadLabel.setText('')
         self.rnd4kq1t1WriteLabel.setText('')
         self.statusbar.showMessage('IDLE')
