@@ -40,18 +40,29 @@ rm -rf %{pypi_name}.egg-info
 
 %install
 %py3_install
-ls -lh $RPM_BUILD_DIR/%{pypi_name}-%{version} 
+# install desktop file
 desktop-file-install                                    \
   --dir=%{buildroot}%{_datadir}/applications              \
   $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}/%{pypi_name}.desktop
+# install icon
+mkdir -p %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/
+cp $RPM_BUILD_DIR/%{pypi_name}-%{version}/%{pypi_name}/images/%{pypi_name}_icon.png \
+  %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/
+# License
+cp $RPM_BUILD_DIR/%{pypi_name}-%{version}/LICENSE \
+  %{buildroot}%{_datadir}/licenses
+
+
 
 
 %files -n python3-%{pypi_name}
 %doc README.md
+%license LICENSE
 %{_bindir}/crazydiskmark
 %{python3_sitelib}/%{pypi_name}
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
 %{_datadir}/applications/%{pypi_name}.desktop
+%{_datadir}/icons/hicolor/48x48/apps/%{pypi_name}_icon.png
 
 %changelog
 * Fri Sep 4 2020 Fred Lins <fredcox@gmail.com>
