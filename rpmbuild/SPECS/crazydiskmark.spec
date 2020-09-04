@@ -9,7 +9,7 @@ Summary:        Linux disk benchmark tool like CrystalDiskMark
 License:        MIT
 URL:            https://github.com/fredcox/crazydiskmark
 Source0:        %{pypi_source}
-BuildArch:      noarch
+BuildArch:      x86_64
 
 BuildRequires:  python3-devel
 BuildRequires:  python3dist(setuptools)
@@ -46,8 +46,7 @@ rm -rf %{pypi_name}.egg-info
 %{_bindir}/crazydiskmark
 %{python3_sitelib}/%{pypi_name}
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
-%{_datadir}/applications/%{pypi_name}.desktop
-%{_datadir}/icons/hicolor/48x48/apps/%{pypi_name}_icon.png
+
 
 %changelog
 * Thu Sep 03 2020 Fred Lins - 0.4.8-1
