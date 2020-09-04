@@ -25,6 +25,7 @@ Summary:        %{summary}
 Requires:       python3dist(coloredlogs)
 Requires:       python3dist(humanfriendly)
 Requires:       python3dist(pyqt5)
+Requires:       fio
 %description -n python3-%{pypi_name}
   Crazy DiskMark is a utility to benchmark SSD disks on linux and produce
   results like CrystalDiskMark.
