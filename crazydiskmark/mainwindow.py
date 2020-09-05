@@ -11,42 +11,80 @@ import logging
 resource_path = os.path.dirname(__file__)
 
 
-class ThreadClass(QtCore.QThread):
+class ThreadBenchmark(QtCore.QThread):
     logger = logging.getLogger(__name__)
     bw_bytes = ''
     operationIndex = 0
+    target = ''
+    loops = '--loops=1'
+    size = '--size=1024m'
+    tmpFile = 'fiomark.tmp'
+    filename = f'--filename="{target}/{tmpFile}"'
+    stoneWall = '--stonewall'
+    ioEngine = '--ioengine=libaio'
+    direct = '--direct=1'
+    zeroBuffers = '--zero_buffers=0'
+    outputFormat = '--output - format = json'
+    fioWhich = subprocess.getoutput('which fio')
+
     operations = [
         {
-            "prefix": "seq1mq8t1",
-            "suffix": "read"
+            "prefix": 'seq1mq8t1',
+            "rw": 'read',
+            'bs': '1m',
+            'ioDepth': '8',
+            'numJobs': '1',
         },
         {
-            "prefix": "seq1mq8t1",
-            "suffix": "write"
+            "prefix": 'seq1mq8t1',
+            "rw": 'write',
+            'bs': '1m',
+            'ioDepth': '8',
+            'numJobs': '1',
         },
         {
-            "prefix": "seq1mq1t1",
-            "suffix": "read"
+            "prefix": 'seq1mq1t1',
+            "rw": 'read',
+            'bs': '1m',
+            'ioDepth': '1',
+            'numJobs': '1',
+
         },
         {
-            "prefix": "seq1mq1t1",
-            "suffix": "write"
+            "prefix": 'seq1mq1t1',
+            "rw": 'write',
+            'bs': '1m',
+            'ioDepth': '1',
+            'numJobs': '1',
         },
         {
-            "prefix": "rnd4kq32t1",
-            "suffix": "read"
+            "prefix": 'rnd4kq32t1',
+            "rw": 'randread',
+            'bs': '4k',
+            'ioDepth': '32',
+            'numJobs': '1',
         },
         {
-            "prefix": "rnd4kq32t1",
-            "suffix": "write"
+            "prefix": 'rnd4kq32t1',
+            "rw": 'randwrite',
+            'bs': '4k',
+            'ioDepth': '32',
+            'numJobs': '1',
         },
         {
-            "prefix": "rnd4kq1t1",
-            "suffix": "read"
+            "prefix": 'rnd4kq1t1',
+            "rw": 'randread',
+            'bs': '4k',
+            'ioDepth': '1',
+            'numJobs': '1',
+
         },
         {
-            "prefix": "rnd4kq1t1",
-            "suffix": "write"
+            "prefix": 'rnd4kq1t1',
+            "rw": 'randwrite',
+            'bs': '4k',
+            'ioDepth': '1',
+            'numJobs': '1',
         }
     ]
 
@@ -54,45 +92,39 @@ class ThreadClass(QtCore.QThread):
     directory = os.getcwd()
 
     def __init__(self, parent=None):
-        super(ThreadClass, self).__init__(parent)
+        super(ThreadBenchmark, self).__init__(parent)
         self.finished.connect(self.threadFinished)
 
     def threadFinished(self):
-        self.signal.emit(self.bw_bytes)
-        self.logger.info('Finished QThread operationIndex = {}'.format(self.operationIndex))
-        self.operationIndex += 1
-        if self.operationIndex == len(self.operations):
-            self.logger.info('all the jobs done.')
-        else:
-            self.start()
-
-    @staticmethod
-    def isEven(number):
-        if number % 2 == 0:
-            return True
-        else:
-            return False
+        pass
+        # self.signal.emit(self.bw_bytes)
+        # self.logger.info('Finished QThread operationIndex = {}'.format(self.operationIndex))
+        # self.operationIndex += 1
+        # if self.operationIndex == len(self.operations):
+        #     self.logger.info('all the jobs done.')
+        # else:
+        #     self.start()
 
     def run(self):
-        # executing command
-        self.logger.info(f'Running Thread [{self.operationIndex}] Even? {self.isEven(self.operationIndex)}')
-        cmd: str = '{}/scripts/{}{}.sh {}'.format(resource_path, self.operations[self.operationIndex]['prefix'],
-                                                  self.operations[self.operationIndex]['suffix'], self.directory)
-        self.logger.info(f'Running [{cmd}]')
+        # executing Benchmarks
+        self.logger.info('Executing Benchmarks....')
+        for index, operation in enumerate(self.operations):
+            self.logger.info(f'Running index: [{index}] prefix: [{operation["prefix"]}] target: [{self.target}]')
 
-        output = json.loads(subprocess.getoutput(cmd).encode('utf-8'))
+        # output = json.loads(subprocess.getoutput(cmd).encode('utf-8'))
 
-        if self.isEven(self.operationIndex):
-            # This is read benchmark
-            self.bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['read']['bw_bytes']))
-        else:
-            # This is write benchmark
-            self.bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['write']['bw_bytes']))
+        # if self.isEven(self.operationIndex):
+        #     # This is read benchmark
+        #     self.bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['read']['bw_bytes']))
+        # else:
+        #     # This is write benchmark
+        #     self.bw_bytes = '{}/s'.format(humanfriendly.format_size(output['jobs'][0]['write']['bw_bytes']))
 
 
 class MainWindow(QtWidgets.QMainWindow):
     logger = logging.getLogger(__name__)
-    thread = ThreadClass()
+    thread = ThreadBenchmark()
+    target = ''
     labelWidgets = []
 
     def __init__(self):
@@ -131,8 +163,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.startPushButton.clicked.connect(self.startBenchMark)
         # Configura e conecta a thread
         #  self.thread.setPriority(QtCore.QThread.HighestPriority)
-        self.thread.setTerminationEnabled()
+        # self.thread.setTerminationEnabled()
         self.thread.signal.connect(self.receiveThreadfinish)
+        self.thread.target = Path.home()
 
         self.aboutDialog = QtWidgets.QDialog()
         uic.loadUi(f'{resource_path}/aboutdialog.ui', self.aboutDialog)
@@ -142,47 +175,42 @@ class MainWindow(QtWidgets.QMainWindow):
         self.version = self.aboutDialog.findChild(QtWidgets.QLabel, 'versionLabel').text()
 
         self.setWindowTitle(f'Crazy DiskMark - {self.version}')
-        # Test if fio (Flexible I/O Tester) is in path
-        if shutil.which('fio') is None:
-            errorDialog = QtWidgets.QMessageBox()
-            errorDialog.setIcon(QtWidgets.QMessageBox.Warning)
-            errorDialog.setText('Flexible I/O Tester not present in your system.')
-            errorDialog.exec()
-            sys.exit()
         # Init results label and others widgets
         self.clearResults()
         # show window
         self.show()
 
     def receiveThreadfinish(self, val):
-        self.logger.info('Receiving signal ok ')
-        self.labelWidgets[self.thread.operationIndex].setText(val)
-        self.progressBar.setProperty('value', (self.thread.operationIndex + 1) * 12.5)
-        if self.thread.operationIndex == 7:
-            self.startPushButton.setText('Start')
-            self.statusbar.showMessage('IDLE')
+        pass
+        # self.logger.info('Receiving signal ok ')
+        # self.labelWidgets[self.thread.operationIndex].setText(val)
+        # self.progressBar.setProperty('value', (self.thread.operationIndex + 1) * 12.5)
+        # if self.thread.operationIndex == 7:
+        #     self.startPushButton.setText('Start')
+        #     self.statusbar.showMessage('IDLE')
 
     def startBenchMark(self):
-        if self.thread.isRunning():
-            tempFile = f'{self.directoryLineEdit.text()}/fiomark.tmp'
-            if os.path.isfile(tempFile):
-                os.remove(tempFile)
-
-            self.startPushButton.setText('Start')
-            self.statusbar.showMessage('IDLE')
-            self.thread.terminate()
-        else:
-            self.clearResults()
-            # Verify if directory is writable
-            if self.isWritable():
-                self.logger.info('Starting benchmark...')
-                self.startPushButton.setText('Stop')
-                self.statusbar.showMessage('Running. Please wait, this may take several minutes...')
-                self.logger.info('Directory writable. OK [Starting Thread]')
-                self.thread.operationsIndex = 0
-                self.thread.start()
-            else:
-                self.logger.info('Directory not writable. [ERROR]')
+        self.thread.start()
+        # if self.thread.isRunning():
+        #     tempFile = f'{self.directoryLineEdit.text()}/fiomark.tmp'
+        #     if os.path.isfile(tempFile):
+        #         os.remove(tempFile)
+        #
+        #     self.startPushButton.setText('Start')
+        #     self.statusbar.showMessage('IDLE')
+        #     # self.thread.terminate()
+        # else:
+        #     self.clearResults()
+        #     # Verify if directory is writable
+        #     if self.isWritable():
+        #         self.logger.info('Starting benchmark...')
+        #         self.startPushButton.setText('Stop')
+        #         self.statusbar.showMessage('Running. Please wait, this may take several minutes...')
+        #         self.logger.info('Directory writable. OK [Starting Thread]')
+        #         self.thread.operationsIndex = 0
+        #         self.thread.start()
+        #     else:
+        #         self.logger.info('Directory not writable. [ERROR]')
 
     def clearResults(self):
         self.progressBar.setProperty('value', 0)
@@ -204,9 +232,9 @@ class MainWindow(QtWidgets.QMainWindow):
         dialog = QtWidgets.QFileDialog()
         dialog.setFileMode(QtWidgets.QFileDialog.DirectoryOnly)
         if dialog.exec():
-            self.thread.directory = dialog.selectedFiles()[0]
-            self.logger.info(f'Directory ===> {self.thread.directory}')
-            self.directoryLineEdit.setText(self.thread.directory)
+            self.thread.target = dialog.selectedFiles()[0]
+            self.logger.info(f'Directory ===> {self.thread.target}')
+            self.directoryLineEdit.setText(self.thread.target)
 
     def isWritable(self):
         self.thread.directory = self.directoryLineEdit.text()
