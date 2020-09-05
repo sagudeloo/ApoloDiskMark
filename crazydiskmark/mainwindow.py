@@ -14,7 +14,6 @@ resource_path = os.path.dirname(__file__)
 class ThreadBenchmark(QtCore.QThread):
     logger = logging.getLogger(__name__)
     bw_bytes = ''
-    operationIndex = 0
     target = ''
     loops = '--loops=1'
     size = '--size=1024m'
@@ -96,6 +95,12 @@ class ThreadBenchmark(QtCore.QThread):
 
     def threadFinished(self):
         pass
+        self.logger.info('Thread Finished, garbage collecting now...')
+        targetFilename = f'{self.target}/{self.tmpFile}'
+        self.logger.info(f'Verifying if temp file exists {targetFilename}')
+        if os.path.isfile(targetFilename):
+            os.remove(targetFilename)
+
         # self.signal.emit(self.bw_bytes)
         # self.logger.info('Finished QThread operationIndex = {}'.format(self.operationIndex))
         # self.operationIndex += 1
@@ -173,7 +178,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.startPushButton.setIcon(QtGui.QIcon(f'{resource_path}/images/starticon.png'))
         self.startPushButton.clicked.connect(self.startBenchMark)
         # Configura e conecta a thread
-        #  self.thread.setPriority(QtCore.QThread.HighestPriority)
+        self.thread.setPriority(QtCore.QThread.HighestPriority)
         # self.thread.setTerminationEnabled()
         self.thread.signal.connect(self.receiveThreadBenchmark)
         self.thread.target = Path.home()
@@ -202,27 +207,22 @@ class MainWindow(QtWidgets.QMainWindow):
         #     self.statusbar.showMessage('IDLE')
 
     def startBenchMark(self):
-        self.thread.start()
-        # if self.thread.isRunning():
-        #     tempFile = f'{self.directoryLineEdit.text()}/fiomark.tmp'
-        #     if os.path.isfile(tempFile):
-        #         os.remove(tempFile)
-        #
-        #     self.startPushButton.setText('Start')
-        #     self.statusbar.showMessage('IDLE')
-        #     # self.thread.terminate()
-        # else:
-        #     self.clearResults()
-        #     # Verify if directory is writable
-        #     if self.isWritable():
-        #         self.logger.info('Starting benchmark...')
-        #         self.startPushButton.setText('Stop')
-        #         self.statusbar.showMessage('Running. Please wait, this may take several minutes...')
-        #         self.logger.info('Directory writable. OK [Starting Thread]')
-        #         self.thread.operationsIndex = 0
-        #         self.thread.start()
-        #     else:
-        #         self.logger.info('Directory not writable. [ERROR]')
+        if self.thread.isRunning():
+            self.startPushButton.setText('Start')
+            self.statusbar.showMessage('IDLE')
+            self.logger.info('Stopping Thread....')
+            self.thread.terminate()
+        else:
+            self.clearResults()
+            # Verify if directory is writable
+            if self.isWritable():
+                self.startPushButton.setText('Stop')
+                self.logger.info('Starting benchmark...')
+                self.statusbar.showMessage('Running. Please wait, this may take several minutes...')
+                self.logger.info('Directory writable. OK [Starting Thread]')
+                self.thread.start()
+            else:
+                self.logger.info('Directory not writable. [ERROR]')
 
     def clearResults(self):
         self.progressBar.setProperty('value', 0)
