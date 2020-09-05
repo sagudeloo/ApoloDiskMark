@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="No more scripts shell necessary. :rocket: :rocket: :rocket:">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" afterDir="false" />
-    </list>
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Removing unecessary imports :rocket: :rocket: :game_die: :game_die: :game_die:" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,13 +96,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598741722556</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Release 0.3.6 out now :rocket:">
-      <created>1599013895641</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1599013895641</updated>
     </task>
     <task id="LOCAL-00012" summary="Delete dist build and egg directories :rocket: :space_invader:">
       <created>1599013957869</created>
@@ -443,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599318477529</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Removing unecessary imports :rocket: :rocket: :game_die: :game_die: :game_die:">
+      <created>1599321460663</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1599321460664</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +460,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/crazydiskmark-aur" />
     </ignored-roots>
-    <MESSAGE value="Release 0.4.7 out now. " />
     <MESSAGE value="Adjust the submit rules to AUR :space_invader: :space_invader:" />
     <MESSAGE value="Add ignore file to deb package" />
     <MESSAGE value="Debian package is ok. " />
@@ -488,7 +484,8 @@
     <MESSAGE value="I make secure routine to remove temporary file :rocket: :rocket:" />
     <MESSAGE value="Prepare to release 0.6.1" />
     <MESSAGE value="No more scripts shell necessary. :rocket: :rocket: :rocket:" />
-    <option name="LAST_COMMIT_MESSAGE" value="No more scripts shell necessary. :rocket: :rocket: :rocket:" />
+    <MESSAGE value="Removing unecessary imports :rocket: :rocket: :game_die: :game_die: :game_die:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing unecessary imports :rocket: :rocket: :game_die: :game_die: :game_die:" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599154783757">
@@ -523,10 +520,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1599192047908" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599318479878">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599321463708">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599318479878" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599321463708" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
