@@ -19,8 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="change the thread to settermination enabled :dog2: :dog2: :dog2:">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/fredlins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/fredlins.xml" afterDir="false" />
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Adjusting Benchmark Thread :bug: :game_die: :cricket_game:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" afterDir="false" />
     </list>
@@ -100,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598741722556</updated>
-    </task>
-    <task id="LOCAL-00006" summary="changing python version requirement to 3.6... maybe not problem :rocket: :bug: :toolbox:">
-      <created>1599005723457</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1599005723457</updated>
     </task>
     <task id="LOCAL-00007" summary="Preparing to release snap package :toolbox:">
       <created>1599006457164</created>
@@ -444,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599263005889</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Adjusting Benchmark Thread :bug: :game_die: :cricket_game:">
+      <created>1599313446866</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1599313446867</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +463,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/crazydiskmark-aur" />
     </ignored-roots>
-    <MESSAGE value="change bug in Icon file" />
     <MESSAGE value="Change icon name and store now in /usr/share/icons" />
     <MESSAGE value="All right with AUR package. " />
     <MESSAGE value="Release 0.4.7 out now. " />
@@ -489,29 +487,30 @@
     <MESSAGE value="update README.md with new badges :dog2: :dog2: :dog2: :dog2: :dog2: :dog2: :dog2: :dog2: :dog2: :dog2::dog2: :dog2: :dog2: :dog2: :dog2::dog2: :dog2: :dog2: :dog2: :dog2:" />
     <MESSAGE value="update benchmark tests to more fast response." />
     <MESSAGE value="change the thread to settermination enabled :dog2: :dog2: :dog2:" />
-    <option name="LAST_COMMIT_MESSAGE" value="change the thread to settermination enabled :dog2: :dog2: :dog2:" />
+    <MESSAGE value="Adjusting Benchmark Thread :bug: :game_die: :cricket_game:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusting Benchmark Thread :bug: :game_die: :cricket_game:" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599154783757">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1599154783757" />
-    <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599313013160">
+    <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599315017635">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599313013160" />
-    <state width="2065" height="275" key="GridCell.Tab.0.center" timestamp="1599313013160">
+    <state width="2065" height="275" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599315017635" />
+    <state width="2065" height="275" key="GridCell.Tab.0.center" timestamp="1599315017634">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599313013160" />
-    <state width="2065" height="275" key="GridCell.Tab.0.left" timestamp="1599313013160">
+    <state width="2065" height="275" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599315017634" />
+    <state width="2065" height="275" key="GridCell.Tab.0.left" timestamp="1599315017634">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599313013160" />
-    <state width="2065" height="275" key="GridCell.Tab.0.right" timestamp="1599313013160">
+    <state width="2065" height="275" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599315017634" />
+    <state width="2065" height="275" key="GridCell.Tab.0.right" timestamp="1599315017634">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599313013160" />
+    <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599315017634" />
     <state x="9" y="86" width="2048" height="859" key="MergeDialog" timestamp="1599172141397">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -524,10 +523,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1599192047908" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599263010156">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599313449934">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599263010156" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599313449934" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

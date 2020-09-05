@@ -19,12 +19,11 @@ class ThreadBenchmark(QtCore.QThread):
     loops = '--loops=1'
     size = '--size=1024m'
     tmpFile = 'fiomark.tmp'
-    filename = f'--filename="{target}/{tmpFile}"'
     stoneWall = '--stonewall'
     ioEngine = '--ioengine=libaio'
     direct = '--direct=1'
     zeroBuffers = '--zero_buffers=0'
-    outputFormat = '--output - format = json'
+    outputFormat = '--output-format=json'
     fioWhich = subprocess.getoutput('which fio')
 
     operations = [
@@ -109,7 +108,19 @@ class ThreadBenchmark(QtCore.QThread):
         # executing Benchmarks
         self.logger.info('Executing Benchmarks....')
         for index, operation in enumerate(self.operations):
-            self.logger.info(f'Running index: [{index}] prefix: [{operation["prefix"]}] target: [{self.target}]')
+            self.logger.info(f'Running index: [{index}]\tprefix:\t[{operation["prefix"]}] rw:[{operation["rw"]}]')
+            filename = f'--filename="{self.target}/{self.tmpFile}"'
+            name = f'--name={operation["prefix"]}{operation["rw"]}'
+            currentCmd = f'{self.fioWhich} {self.loops} {self.size} {filename} {self.stoneWall} {self.ioEngine} {self.direct} {self.zeroBuffers} {name} --bs={operation["bs"]} --iodepth={operation["ioDepth"]} --numjobs={operation["numJobs"]} --rw={operation["rw"]} {self.outputFormat}'
+            self.logger.info(f'Executing Command: {currentCmd}')
+            if 'read' in operation['rw']:
+                self.logger.info('Type READ')
+            else:
+                self.logger.info('Type Write')
+
+            self.bw_bytes = f'{operation["prefix"]}{operation["rw"]}'
+            self.signal.emit(self.bw_bytes)
+            self.sleep(1)
 
         # output = json.loads(subprocess.getoutput(cmd).encode('utf-8'))
 
@@ -164,7 +175,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # Configura e conecta a thread
         #  self.thread.setPriority(QtCore.QThread.HighestPriority)
         # self.thread.setTerminationEnabled()
-        self.thread.signal.connect(self.receiveThreadfinish)
+        self.thread.signal.connect(self.receiveThreadBenchmark)
         self.thread.target = Path.home()
 
         self.aboutDialog = QtWidgets.QDialog()
@@ -180,7 +191,8 @@ class MainWindow(QtWidgets.QMainWindow):
         # show window
         self.show()
 
-    def receiveThreadfinish(self, val):
+    def receiveThreadBenchmark(self, val):
+        self.logger.info(f'Receiving ===> {val}')
         pass
         # self.logger.info('Receiving signal ok ')
         # self.labelWidgets[self.thread.operationIndex].setText(val)
