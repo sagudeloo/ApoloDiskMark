@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="I make secure routine to remove temporary file :rocket: :rocket:">
+    <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="No more scripts shell necessary. :rocket: :rocket: :rocket:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/updateversions.py" beforeDir="false" afterPath="$PROJECT_DIR$/updateversions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,20 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598741722556</updated>
-    </task>
-    <task id="LOCAL-00009" summary="No snap, no more snaps.">
-      <created>1599013328063</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1599013328063</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Prepare to release 0.3.6">
-      <created>1599013391501</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1599013391501</updated>
     </task>
     <task id="LOCAL-00011" summary="Release 0.3.6 out now :rocket:">
       <created>1599013895641</created>
@@ -443,7 +429,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599316107546</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Prepare to release 0.6.1">
+      <created>1599318435739</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1599318435739</updated>
+    </task>
+    <task id="LOCAL-00059" summary="No more scripts shell necessary. :rocket: :rocket: :rocket:">
+      <created>1599318477529</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1599318477529</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,8 +463,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/crazydiskmark-aur" />
     </ignored-roots>
-    <MESSAGE value="All right with AUR package. " />
-    <MESSAGE value="Release 0.4.7 out now. " />
     <MESSAGE value="Release 0.4.7 out now. " />
     <MESSAGE value="Adjust the submit rules to AUR :space_invader: :space_invader:" />
     <MESSAGE value="Add ignore file to deb package" />
@@ -488,29 +486,31 @@
     <MESSAGE value="change the thread to settermination enabled :dog2: :dog2: :dog2:" />
     <MESSAGE value="Adjusting Benchmark Thread :bug: :game_die: :cricket_game:" />
     <MESSAGE value="I make secure routine to remove temporary file :rocket: :rocket:" />
-    <option name="LAST_COMMIT_MESSAGE" value="I make secure routine to remove temporary file :rocket: :rocket:" />
+    <MESSAGE value="Prepare to release 0.6.1" />
+    <MESSAGE value="No more scripts shell necessary. :rocket: :rocket: :rocket:" />
+    <option name="LAST_COMMIT_MESSAGE" value="No more scripts shell necessary. :rocket: :rocket: :rocket:" />
   </component>
   <component name="WindowStateProjectService">
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599154783757">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="781" y="323" width="514" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1599154783757" />
-    <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599318322139">
+    <state width="2065" height="275" key="GridCell.Tab.0.bottom" timestamp="1599318493777">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599318322139" />
-    <state width="2065" height="275" key="GridCell.Tab.0.center" timestamp="1599318322138">
+    <state width="2065" height="275" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1599318493777" />
+    <state width="2065" height="275" key="GridCell.Tab.0.center" timestamp="1599318493776">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599318322138" />
-    <state width="2065" height="275" key="GridCell.Tab.0.left" timestamp="1599318322138">
+    <state width="2065" height="275" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1599318493776" />
+    <state width="2065" height="275" key="GridCell.Tab.0.left" timestamp="1599318493775">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599318322138" />
-    <state width="2065" height="275" key="GridCell.Tab.0.right" timestamp="1599318322138">
+    <state width="2065" height="275" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1599318493775" />
+    <state width="2065" height="275" key="GridCell.Tab.0.right" timestamp="1599318493776">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599318322138" />
+    <state width="2065" height="275" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1599318493776" />
     <state x="9" y="86" width="2048" height="859" key="MergeDialog" timestamp="1599172141397">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -523,10 +523,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="529" y="155" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1599192047908" />
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599316110000">
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2" timestamp="1599318479878">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599316110000" />
+    <state x="620" y="256" width="800" height="525" key="Vcs.Push.Dialog.v2/0.0.2560.1040@0.0.2560.1040" timestamp="1599318479878" />
     <state x="754" y="189" width="560" height="658" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1598839620998">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

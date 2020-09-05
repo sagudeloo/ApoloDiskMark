@@ -24,7 +24,7 @@ def updateFile(fileToUpdate, regPattern, newString):
 logger = logging.getLogger(__name__)
 coloredlogs.install()
 
-newVersion = '0.6.0'
+newVersion = '0.6.1'
 pattern = "([0-9]+\.[0-9]+\.[0-9]+)"
 
 files = ['setup.py', 'aur/PKGBUILD', 'debian/changelog', 'rpmbuild/crazydiskmark.spec']
