@@ -188,6 +188,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.operationIndex += 1
         if self.operationIndex == len(self.thread.operations):
             self.startPushButton.setText('Start')
+            self.statusbar.showMessage('IDLE')
             self.operationIndex = 0
 
     def startBenchMark(self):

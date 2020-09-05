@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b71e2933-4931-407f-9b17-07d49479c7e2" name="Default Changelist" comment="Removing unecessary imports :rocket: :rocket: :game_die: :game_die: :game_die:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crazydiskmark/images/crazydiskmark_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/images/crazydiskmark_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/crazydiskmark/mainwindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/updateversions.py" beforeDir="false" afterPath="$PROJECT_DIR$/updateversions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
