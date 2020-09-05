@@ -3,7 +3,6 @@ import os
 import subprocess
 import json
 import humanfriendly
-import shutil
 from pathlib import Path
 from PyQt5 import QtWidgets, uic, QtCore, QtGui
 import logging
@@ -164,7 +163,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.startPushButton.setIcon(QtGui.QIcon(f'{resource_path}/images/starticon.png'))
         self.startPushButton.clicked.connect(self.startBenchMark)
         # Configura e conecta a thread
-        self.thread.setPriority(QtCore.QThread.HighestPriority)
+        # self.thread.setPriority(QtCore.QThread.HighestPriority)
         # self.thread.setTerminationEnabled()
         self.thread.signal.connect(self.receiveThreadBenchmark)
         self.thread.target = Path.home()
