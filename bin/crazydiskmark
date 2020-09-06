@@ -5,7 +5,7 @@ import coloredlogs
 import logging
 import os
 import crazydiskmark.mainwindow
-import crazydiskmark.mainwindow
+
 
 if __name__ == '__main__':
     os.environ['QT_LOGGING_RULES'] = "qt5ct.debug=false"

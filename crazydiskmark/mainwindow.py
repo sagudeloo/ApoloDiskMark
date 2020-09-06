@@ -242,7 +242,7 @@ class MainWindow(QtWidgets.QMainWindow):
             return False
 
     def showAboutDialog(self):
-        self.aboutDialog.exec_()
+        self.aboutDialog.show()
 
     def quitAboutDialog(self):
         self.aboutDialog.hide()
