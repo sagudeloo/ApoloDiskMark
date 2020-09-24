@@ -1,9 +1,0 @@
-include README.md
-include README.me
-include LICENSE
-include crazydiskmark.1
-include crazydiskmark.1.gz
-include crazydiskmark/*.ui
-include crazydiskmark/crazydiskmark.desktop
-include crazydiskmark/images/*
-include crazydiskmark/scripts/*
